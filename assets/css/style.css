@@ -1,0 +1,36 @@
+/* navbar */
+button:focus {
+    outline: 0;
+}
+
+.navbar .dropdown-menu .form-control {
+    width: 200px;
+}
+/*  */
+footer a, footer{
+    color: white;
+}
+footer{
+    background: #434b53 !important;
+}
+.body{
+    margin: 75px;
+}
+.footer-copyright{
+    background: #343a40!important;
+}
+.button-caratula{
+    margin-top: 5px;    
+}
+.title{
+    font-weight: bold;
+}
+.caratula{
+    width: 200px;
+}
+.pelicula{
+    margin-top: 10px;
+}
+#n_usuario{
+    color: white;
+}
