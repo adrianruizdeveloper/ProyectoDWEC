@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cartelera SYSTEM "cartelera.dtd">
+
+<!--
+    Document   : cartelera.xml
+    Description: Información de películas en cartel y sesiones programadas del multicine
+-->
+
+<cartelera>
+    <peliculas>
+        <pelicula id="1" titulo="Alatriste" duracion="147" genero="acción" calificacion="nrm7"/>
+        <pelicula id="2" titulo="Ant Bully: Bienvenido Al Hormiguero" duracion="90" genero="antimación" calificacion="apta"/>    
+        <pelicula id="3" titulo="Cabeza de Perro" duracion="91" genero="drama" calificacion="nrm13"/>
+        <pelicula id="4" titulo="Click" duracion="110" genero="comedia" calificacion="nrm7"/>
+        <pelicula id="5" titulo="Corrupción en Miami" genero="acción" calificacion="nrm18"/>
+        <pelicula id="6" titulo="El Diablo Viste de Prada" duracion="112" genero="comedia" calificacion="nrm13"/>
+        <pelicula id="7" titulo="Garfiel 2" duracion="80" genero="comedia" calificacion="apta"/>
+        <pelicula id="8" titulo="La Increible Historia de Caperucita Roja" genero="animación" calificacion="apta"/>
+        <pelicula id="9" titulo="La Última Puerta" genero="drama" calificacion="nrm13"/>
+        <pelicula id="10" titulo="Los Borgia" duracion="151" genero="drama" calificacion="nrm13"/>
+        <pelicula id="11" titulo="Mi Super Ex-Novia" genero="romántica" calificacion="nrm13"/>
+        <pelicula id="12" titulo="Monster House" duracion="93" genero="animación" calificacion="nrm7"/>
+        <pelicula id="13" titulo="Pequeño Pero Matón" duracion="100" genero="comedia" calificacion="nrm13"/>
+        <pelicula id="14" titulo="Piratas Del Caribe: El Cofre del Hombre Muerto" duracion="154" genero="acción" calificacion="nrm7"/>
+        <pelicula id="15" titulo="Principe De Los Ladrones" duracion="98" genero="juvenil" calificacion="apta"/>
+        <pelicula id="16" titulo="Salvador" duracion="138" genero="drama" calificacion="nrm13"/>
+        <pelicula id="17" titulo="Separados" genero="comedia" calificacion="apta"/>
+        <pelicula id="18" titulo="Serpientes en el Avión" duracion="105" genero="terror" calificacion="nrm13"/>
+        <pelicula id="19" titulo="World Trade Center" duracion="125" genero="drama" calificacion="nrm13"/>
+    </peliculas>
+
+    <sesiones>
+        <sesion pelicula="1" sala="1" dia="6/09/2011" hora="17:00"/>
+        <sesion pelicula="1" sala="1" dia="6/09/2011" hora="19:45"/>
+        <sesion pelicula="1" sala="1" dia="6/09/2011" hora="22:30"/>
+        <sesion pelicula="1" sala="15" dia="6/09/2011" hora="00:05"/>
+    
+        <sesion pelicula="2" sala="2" dia="6/09/2011" hora="16:30"/>
+        <sesion pelicula="2" sala="2" dia="6/09/2011" hora="18:15"/>
+        
+        <sesion pelicula="3" sala="3" dia="6/09/2011" hora="17:00"/>
+        <sesion pelicula="3" sala="3" dia="6/09/2011" hora="18:45"/>
+        <sesion pelicula="3" sala="3" dia="6/09/2011" hora="20:30"/>
+        <sesion pelicula="3" sala="3" dia="6/09/2011" hora="22:15"/>
+        <sesion pelicula="3" sala="3" dia="6/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="4" sala="4" dia="6/09/2011" hora="16:30"/>
+        <sesion pelicula="4" sala="4" dia="6/09/2011" hora="18:30"/>
+        <sesion pelicula="4" sala="4" dia="6/09/2011" hora="20:30"/>
+        <sesion pelicula="4" sala="4" dia="6/09/2011" hora="22:30"/>
+
+        <sesion pelicula="5" sala="2" dia="6/09/2011" hora="21:30"/>
+        <sesion pelicula="5" sala="2" dia="6/09/2011" hora="00:05"/>
+       
+        <sesion pelicula="6" sala="5" dia="6/09/2011" hora="17:00"/>
+        <sesion pelicula="6" sala="5" dia="6/09/2011" hora="19:30"/>
+        <sesion pelicula="6" sala="5" dia="6/09/2011" hora="21:45"/>
+        <sesion pelicula="6" sala="5" dia="6/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="7" sala="6" dia="6/09/2011" hora="16:30"/>
+        <sesion pelicula="7" sala="6" dia="6/09/2011" hora="18:00"/>
+        
+        <sesion pelicula="8" sala="7" dia="6/09/2011" hora="16:30"/>
+        <sesion pelicula="8" sala="7" dia="6/09/2011" hora="18:00"/>
+        <sesion pelicula="8" sala="7" dia="6/09/2011" hora="21:00"/>
+        <sesion pelicula="8" sala="7" dia="6/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="9" sala="12" dia="6/09/2011" hora="19:45"/>
+
+        <sesion pelicula="10" sala="8" dia="6/09/2011" hora="17:00"/>
+        <sesion pelicula="10" sala="8" dia="6/09/2011" hora="20:00"/>
+        <sesion pelicula="10" sala="8" dia="6/09/2011" hora="23:00"/>
+        
+        <sesion pelicula="11" sala="9" dia="6/09/2011" hora="17:30"/>
+        <sesion pelicula="11" sala="9" dia="6/09/2011" hora="19:30"/>
+        <sesion pelicula="11" sala="9" dia="6/09/2011" hora="21:30"/>
+        <sesion pelicula="11" sala="9" dia="6/09/2011" hora="23:30"/>
+        
+        <sesion pelicula="12" sala="10" dia="6/09/2011" hora="16:30"/>
+        <sesion pelicula="12" sala="10" dia="6/09/2011" hora="18:30"/>
+
+        <sesion pelicula="13" sala="11" dia="6/09/2011" hora="16:30"/>
+        <sesion pelicula="13" sala="11" dia="6/09/2011" hora="18:30"/>
+        <sesion pelicula="13" sala="11" dia="6/09/2011" hora="20:30"/>
+        <sesion pelicula="13" sala="11" dia="6/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="14" sala="12" dia="6/09/2011" hora="17:00"/>
+
+        <sesion pelicula="15" sala="13" dia="6/09/2011" hora="16:30"/>
+        <sesion pelicula="15" sala="13" dia="6/09/2011" hora="18:30"/>
+        <sesion pelicula="15" sala="13" dia="6/09/2011" hora="20:30"/>
+        <sesion pelicula="15" sala="13" dia="6/09/2011" hora="22:30"/>
+
+        <sesion pelicula="16" sala="12" dia="6/09/2011" hora="22:00"/>
+         
+        <sesion pelicula="17" sala="10" dia="6/09/2011" hora="20:00"/>
+        <sesion pelicula="17" sala="10" dia="6/09/2011" hora="22:00"/>
+        <sesion pelicula="17" sala="10" dia="6/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="18" sala="13" dia="6/09/2011" hora="16:30"/>
+        <sesion pelicula="18" sala="13" dia="6/09/2011" hora="18:30"/>
+        <sesion pelicula="18" sala="13" dia="6/09/2011" hora="20:30"/>
+        <sesion pelicula="18" sala="13" dia="6/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="18" sala="15" dia="6/09/2011" hora="20:30"/>
+        <sesion pelicula="18" sala="15" dia="6/09/2011" hora="22:30"/>
+        
+
+        <sesion pelicula="19" sala="14" dia="6/09/2011" hora="17:00"/>
+        <sesion pelicula="19" sala="14" dia="6/09/2011" hora="19:30"/>
+        <sesion pelicula="19" sala="14" dia="6/09/2011" hora="21:45"/>
+        <sesion pelicula="19" sala="14" dia="6/09/2011" hora="00:05"/>
+    </sesiones>
+
+    <sesiones >
+        <sesion pelicula="1" sala="1" dia="7/09/2011" hora="17:00"/>
+        <sesion pelicula="1" sala="1" dia="7/09/2011" hora="19:45"/>
+        <sesion pelicula="1" sala="1" dia="7/09/2011" hora="22:30"/>
+        <sesion pelicula="1" sala="15" dia="7/09/2011" hora="00:05"/>
+    
+        <sesion pelicula="2" sala="2" dia="7/09/2011" hora="16:30"/>
+        <sesion pelicula="2" sala="2" dia="7/09/2011" hora="18:15"/>
+        
+        <sesion pelicula="3" sala="3" dia="7/09/2011" hora="17:00"/>
+        <sesion pelicula="3" sala="3" dia="7/09/2011" hora="18:45"/>
+        <sesion pelicula="3" sala="3" dia="7/09/2011" hora="20:30"/>
+        <sesion pelicula="3" sala="3" dia="7/09/2011" hora="22:15"/>
+        <sesion pelicula="3" sala="3" dia="7/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="4" sala="4" dia="7/09/2011" hora="16:30"/>
+        <sesion pelicula="4" sala="4" dia="7/09/2011" hora="18:30"/>
+        <sesion pelicula="4" sala="4" dia="7/09/2011" hora="20:30"/>
+        <sesion pelicula="4" sala="4" dia="7/09/2011" hora="22:30"/>
+
+        <sesion pelicula="5" sala="2" dia="7/09/2011" hora="21:30"/>
+        <sesion pelicula="5" sala="2" dia="7/09/2011" hora="00:05"/>
+       
+        <sesion pelicula="6" sala="5" dia="7/09/2011" hora="17:00"/>
+        <sesion pelicula="6" sala="5" dia="7/09/2011" hora="19:30"/>
+        <sesion pelicula="6" sala="5" dia="7/09/2011" hora="21:45"/>
+        <sesion pelicula="6" sala="5" dia="7/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="7" sala="6" dia="7/09/2011" hora="16:30"/>
+        <sesion pelicula="7" sala="6" dia="7/09/2011" hora="18:00"/>
+        
+        <sesion pelicula="8" sala="7" dia="7/09/2011" hora="16:30"/>
+        <sesion pelicula="8" sala="7" dia="7/09/2011" hora="18:00"/>
+        <sesion pelicula="8" sala="7" dia="7/09/2011" hora="21:00"/>
+        <sesion pelicula="8" sala="7" dia="7/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="9" sala="12" dia="7/09/2011" hora="19:45"/>
+
+        <sesion pelicula="10" sala="8" dia="7/09/2011" hora="17:00"/>
+        <sesion pelicula="10" sala="8" dia="7/09/2011" hora="20:00"/>
+        <sesion pelicula="10" sala="8" dia="7/09/2011" hora="23:00"/>
+        
+        <sesion pelicula="11" sala="9" dia="7/09/2011" hora="17:30"/>
+        <sesion pelicula="11" sala="9" dia="7/09/2011" hora="19:30"/>
+        <sesion pelicula="11" sala="9" dia="7/09/2011" hora="21:30"/>
+        <sesion pelicula="11" sala="9" dia="7/09/2011" hora="23:30"/>
+        
+        <sesion pelicula="12" sala="10" dia="7/09/2011" hora="16:30"/>
+        <sesion pelicula="12" sala="10" dia="7/09/2011" hora="18:30"/>
+
+        <sesion pelicula="13" sala="11" dia="7/09/2011" hora="16:30"/>
+        <sesion pelicula="13" sala="11" dia="7/09/2011" hora="18:30"/>
+        <sesion pelicula="13" sala="11" dia="7/09/2011" hora="20:30"/>
+        <sesion pelicula="13" sala="11" dia="7/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="14" sala="12" dia="7/09/2011" hora="17:00"/>
+
+        <sesion pelicula="15" sala="13" dia="7/09/2011" hora="16:30"/>
+        <sesion pelicula="15" sala="13" dia="7/09/2011" hora="18:30"/>
+        <sesion pelicula="15" sala="13" dia="7/09/2011" hora="20:30"/>
+        <sesion pelicula="15" sala="13" dia="7/09/2011" hora="22:30"/>
+
+        <sesion pelicula="16" sala="12" dia="7/09/2011" hora="22:00"/>
+         
+        <sesion pelicula="17" sala="10" dia="7/09/2011" hora="20:00"/>
+        <sesion pelicula="17" sala="10" dia="7/09/2011" hora="22:00"/>
+        <sesion pelicula="17" sala="10" dia="7/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="18" sala="13" dia="7/09/2011" hora="16:30"/>
+        <sesion pelicula="18" sala="13" dia="7/09/2011" hora="18:30"/>
+        <sesion pelicula="18" sala="13" dia="7/09/2011" hora="20:30"/>
+        <sesion pelicula="18" sala="13" dia="7/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="18" sala="15" dia="7/09/2011" hora="20:30"/>
+        <sesion pelicula="18" sala="15" dia="7/09/2011" hora="22:30"/>
+        
+
+        <sesion pelicula="19" sala="14" dia="7/09/2011" hora="17:00"/>
+        <sesion pelicula="19" sala="14" dia="7/09/2011" hora="19:30"/>
+        <sesion pelicula="19" sala="14" dia="7/09/2011" hora="21:45"/>
+        <sesion pelicula="19" sala="14" dia="7/09/2011" hora="00:05"/>
+    </sesiones>    
+    
+    <sesiones >
+        <sesion pelicula="1" sala="1" dia="8/09/2011" hora="17:00"/>
+        <sesion pelicula="1" sala="1" dia="8/09/2011" hora="19:45"/>
+        <sesion pelicula="1" sala="1" dia="8/09/2011" hora="22:30"/>
+        <sesion pelicula="1" sala="15" dia="8/09/2011" hora="00:05"/>
+    
+        <sesion pelicula="2" sala="2" dia="8/09/2011" hora="16:30"/>
+        <sesion pelicula="2" sala="2" dia="8/09/2011" hora="18:15"/>
+        
+        <sesion pelicula="3" sala="3" dia="8/09/2011" hora="17:00"/>
+        <sesion pelicula="3" sala="3" dia="8/09/2011" hora="18:45"/>
+        <sesion pelicula="3" sala="3" dia="8/09/2011" hora="20:30"/>
+        <sesion pelicula="3" sala="3" dia="8/09/2011" hora="22:15"/>
+        <sesion pelicula="3" sala="3" dia="8/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="4" sala="4" dia="8/09/2011" hora="16:30"/>
+        <sesion pelicula="4" sala="4" dia="8/09/2011" hora="18:30"/>
+        <sesion pelicula="4" sala="4" dia="8/09/2011" hora="20:30"/>
+        <sesion pelicula="4" sala="4" dia="8/09/2011" hora="22:30"/>
+
+        <sesion pelicula="5" sala="2" dia="8/09/2011" hora="21:30"/>
+        <sesion pelicula="5" sala="2" dia="8/09/2011" hora="00:05"/>
+       
+        <sesion pelicula="6" sala="5" dia="8/09/2011" hora="17:00"/>
+        <sesion pelicula="6" sala="5" dia="8/09/2011" hora="19:30"/>
+        <sesion pelicula="6" sala="5" dia="8/09/2011" hora="21:45"/>
+        <sesion pelicula="6" sala="5" dia="8/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="7" sala="6" dia="8/09/2011" hora="16:30"/>
+        <sesion pelicula="7" sala="6" dia="8/09/2011" hora="18:00"/>
+        
+        <sesion pelicula="8" sala="7" dia="8/09/2011" hora="16:30"/>
+        <sesion pelicula="8" sala="7" dia="8/09/2011" hora="18:00"/>
+        <sesion pelicula="8" sala="7" dia="8/09/2011" hora="21:00"/>
+        <sesion pelicula="8" sala="7" dia="8/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="9" sala="12" dia="8/09/2011" hora="19:45"/>
+
+        <sesion pelicula="10" sala="8" dia="8/09/2011" hora="17:00"/>
+        <sesion pelicula="10" sala="8" dia="8/09/2011" hora="20:00"/>
+        <sesion pelicula="10" sala="8" dia="8/09/2011" hora="23:00"/>
+        
+        <sesion pelicula="11" sala="9" dia="8/09/2011" hora="17:30"/>
+        <sesion pelicula="11" sala="9" dia="8/09/2011" hora="19:30"/>
+        <sesion pelicula="11" sala="9" dia="8/09/2011" hora="21:30"/>
+        <sesion pelicula="11" sala="9" dia="8/09/2011" hora="23:30"/>
+        
+        <sesion pelicula="12" sala="10" dia="8/09/2011" hora="16:30"/>
+        <sesion pelicula="12" sala="10" dia="8/09/2011" hora="18:30"/>
+
+        <sesion pelicula="13" sala="11" dia="8/09/2011" hora="16:30"/>
+        <sesion pelicula="13" sala="11" dia="8/09/2011" hora="18:30"/>
+        <sesion pelicula="13" sala="11" dia="8/09/2011" hora="20:30"/>
+        <sesion pelicula="13" sala="11" dia="8/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="14" sala="12" dia="8/09/2011" hora="17:00"/>
+
+        <sesion pelicula="15" sala="13" dia="8/09/2011" hora="16:30"/>
+        <sesion pelicula="15" sala="13" dia="8/09/2011" hora="18:30"/>
+        <sesion pelicula="15" sala="13" dia="8/09/2011" hora="20:30"/>
+        <sesion pelicula="15" sala="13" dia="8/09/2011" hora="22:30"/>
+
+        <sesion pelicula="16" sala="12" dia="8/09/2011" hora="22:00"/>
+         
+        <sesion pelicula="17" sala="10" dia="8/09/2011" hora="20:00"/>
+        <sesion pelicula="17" sala="10" dia="8/09/2011" hora="22:00"/>
+        <sesion pelicula="17" sala="10" dia="8/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="18" sala="13" dia="8/09/2011" hora="16:30"/>
+        <sesion pelicula="18" sala="13" dia="8/09/2011" hora="18:30"/>
+        <sesion pelicula="18" sala="13" dia="8/09/2011" hora="20:30"/>
+        <sesion pelicula="18" sala="13" dia="8/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="18" sala="15" dia="8/09/2011" hora="20:30"/>
+        <sesion pelicula="18" sala="15" dia="8/09/2011" hora="22:30"/>
+        
+
+        <sesion pelicula="19" sala="14" dia="8/09/2011" hora="17:00"/>
+        <sesion pelicula="19" sala="14" dia="8/09/2011" hora="19:30"/>
+        <sesion pelicula="19" sala="14" dia="8/09/2011" hora="21:45"/>
+        <sesion pelicula="19" sala="14" dia="8/09/2011" hora="00:05"/>
+    </sesiones>    
+
+    <sesiones >
+        <sesion pelicula="1" sala="1" dia="9/09/2011" hora="17:00"/>
+        <sesion pelicula="1" sala="1" dia="9/09/2011" hora="19:45"/>
+        <sesion pelicula="1" sala="1" dia="9/09/2011" hora="22:30"/>
+        <sesion pelicula="1" sala="15" dia="9/09/2011" hora="00:05"/>
+    
+        <sesion pelicula="2" sala="2" dia="9/09/2011" hora="16:30"/>
+        <sesion pelicula="2" sala="2" dia="9/09/2011" hora="18:15"/>
+        
+        <sesion pelicula="3" sala="3" dia="9/09/2011" hora="17:00"/>
+        <sesion pelicula="3" sala="3" dia="9/09/2011" hora="18:45"/>
+        <sesion pelicula="3" sala="3" dia="9/09/2011" hora="20:30"/>
+        <sesion pelicula="3" sala="3" dia="9/09/2011" hora="22:15"/>
+        <sesion pelicula="3" sala="3" dia="9/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="4" sala="4" dia="9/09/2011" hora="16:30"/>
+        <sesion pelicula="4" sala="4" dia="9/09/2011" hora="18:30"/>
+        <sesion pelicula="4" sala="4" dia="9/09/2011" hora="20:30"/>
+        <sesion pelicula="4" sala="4" dia="9/09/2011" hora="22:30"/>
+
+        <sesion pelicula="5" sala="2" dia="9/09/2011" hora="21:30"/>
+        <sesion pelicula="5" sala="2" dia="9/09/2011" hora="00:05"/>
+       
+        <sesion pelicula="6" sala="5" dia="9/09/2011" hora="17:00"/>
+        <sesion pelicula="6" sala="5" dia="9/09/2011" hora="19:30"/>
+        <sesion pelicula="6" sala="5" dia="9/09/2011" hora="21:45"/>
+        <sesion pelicula="6" sala="5" dia="9/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="7" sala="6" dia="9/09/2011" hora="16:30"/>
+        <sesion pelicula="7" sala="6" dia="9/09/2011" hora="18:00"/>
+        
+        <sesion pelicula="8" sala="7" dia="9/09/2011" hora="16:30"/>
+        <sesion pelicula="8" sala="7" dia="9/09/2011" hora="18:00"/>
+        <sesion pelicula="8" sala="7" dia="9/09/2011" hora="21:00"/>
+        <sesion pelicula="8" sala="7" dia="9/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="9" sala="12" dia="9/09/2011" hora="19:45"/>
+
+        <sesion pelicula="10" sala="8" dia="9/09/2011" hora="17:00"/>
+        <sesion pelicula="10" sala="8" dia="9/09/2011" hora="20:00"/>
+        <sesion pelicula="10" sala="8" dia="9/09/2011" hora="23:00"/>
+        
+        <sesion pelicula="11" sala="9" dia="9/09/2011" hora="17:30"/>
+        <sesion pelicula="11" sala="9" dia="9/09/2011" hora="19:30"/>
+        <sesion pelicula="11" sala="9" dia="9/09/2011" hora="21:30"/>
+        <sesion pelicula="11" sala="9" dia="9/09/2011" hora="23:30"/>
+        
+        <sesion pelicula="12" sala="10" dia="9/09/2011" hora="16:30"/>
+        <sesion pelicula="12" sala="10" dia="9/09/2011" hora="18:30"/>
+
+        <sesion pelicula="13" sala="11" dia="9/09/2011" hora="16:30"/>
+        <sesion pelicula="13" sala="11" dia="9/09/2011" hora="18:30"/>
+        <sesion pelicula="13" sala="11" dia="9/09/2011" hora="20:30"/>
+        <sesion pelicula="13" sala="11" dia="9/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="14" sala="12" dia="9/09/2011" hora="17:00"/>
+
+        <sesion pelicula="15" sala="13" dia="9/09/2011" hora="16:30"/>
+        <sesion pelicula="15" sala="13" dia="9/09/2011" hora="18:30"/>
+        <sesion pelicula="15" sala="13" dia="9/09/2011" hora="20:30"/>
+        <sesion pelicula="15" sala="13" dia="9/09/2011" hora="22:30"/>
+
+        <sesion pelicula="16" sala="12" dia="9/09/2011" hora="22:00"/>
+         
+        <sesion pelicula="17" sala="10" dia="9/09/2011" hora="20:00"/>
+        <sesion pelicula="17" sala="10" dia="9/09/2011" hora="22:00"/>
+        <sesion pelicula="17" sala="10" dia="9/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="18" sala="13" dia="9/09/2011" hora="16:30"/>
+        <sesion pelicula="18" sala="13" dia="9/09/2011" hora="18:30"/>
+        <sesion pelicula="18" sala="13" dia="9/09/2011" hora="20:30"/>
+        <sesion pelicula="18" sala="13" dia="9/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="18" sala="15" dia="9/09/2011" hora="20:30"/>
+        <sesion pelicula="18" sala="15" dia="9/09/2011" hora="22:30"/>
+        
+
+        <sesion pelicula="19" sala="14" dia="9/09/2011" hora="17:00"/>
+        <sesion pelicula="19" sala="14" dia="9/09/2011" hora="19:30"/>
+        <sesion pelicula="19" sala="14" dia="9/09/2011" hora="21:45"/>
+        <sesion pelicula="19" sala="14" dia="9/09/2011" hora="00:05"/>
+    </sesiones>    
+    
+    <sesiones >
+        <sesion pelicula="1" sala="1" dia="10/09/2011" hora="17:00"/>
+        <sesion pelicula="1" sala="1" dia="10/09/2011" hora="19:45"/>
+        <sesion pelicula="1" sala="1" dia="10/09/2011" hora="22:30"/>
+        <sesion pelicula="1" sala="15" dia="10/09/2011" hora="00:05"/>
+    
+        <sesion pelicula="2" sala="2" dia="10/09/2011" hora="16:30"/>
+        <sesion pelicula="2" sala="2" dia="10/09/2011" hora="18:15"/>
+        
+        <sesion pelicula="3" sala="3" dia="10/09/2011" hora="17:00"/>
+        <sesion pelicula="3" sala="3" dia="10/09/2011" hora="18:45"/>
+        <sesion pelicula="3" sala="3" dia="10/09/2011" hora="20:30"/>
+        <sesion pelicula="3" sala="3" dia="10/09/2011" hora="22:15"/>
+        <sesion pelicula="3" sala="3" dia="10/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="4" sala="4" dia="10/09/2011" hora="16:30"/>
+        <sesion pelicula="4" sala="4" dia="10/09/2011" hora="18:30"/>
+        <sesion pelicula="4" sala="4" dia="10/09/2011" hora="20:30"/>
+        <sesion pelicula="4" sala="4" dia="10/09/2011" hora="22:30"/>
+
+        <sesion pelicula="5" sala="2" dia="10/09/2011" hora="21:30"/>
+        <sesion pelicula="5" sala="2" dia="10/09/2011" hora="00:05"/>
+       
+        <sesion pelicula="6" sala="5" dia="10/09/2011" hora="17:00"/>
+        <sesion pelicula="6" sala="5" dia="10/09/2011" hora="19:30"/>
+        <sesion pelicula="6" sala="5" dia="10/09/2011" hora="21:45"/>
+        <sesion pelicula="6" sala="5" dia="10/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="7" sala="6" dia="10/09/2011" hora="16:30"/>
+        <sesion pelicula="7" sala="6" dia="10/09/2011" hora="18:00"/>
+        
+        <sesion pelicula="8" sala="7" dia="10/09/2011" hora="16:30"/>
+        <sesion pelicula="8" sala="7" dia="10/09/2011" hora="18:00"/>
+        <sesion pelicula="8" sala="7" dia="10/09/2011" hora="21:00"/>
+        <sesion pelicula="8" sala="7" dia="10/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="9" sala="12" dia="10/09/2011" hora="19:45"/>
+
+        <sesion pelicula="10" sala="8" dia="10/09/2011" hora="17:00"/>
+        <sesion pelicula="10" sala="8" dia="10/09/2011" hora="20:00"/>
+        <sesion pelicula="10" sala="8" dia="10/09/2011" hora="23:00"/>
+        
+        <sesion pelicula="11" sala="9" dia="10/09/2011" hora="17:30"/>
+        <sesion pelicula="11" sala="9" dia="10/09/2011" hora="19:30"/>
+        <sesion pelicula="11" sala="9" dia="10/09/2011" hora="21:30"/>
+        <sesion pelicula="11" sala="9" dia="10/09/2011" hora="23:30"/>
+        
+        <sesion pelicula="12" sala="10" dia="10/09/2011" hora="16:30"/>
+        <sesion pelicula="12" sala="10" dia="10/09/2011" hora="18:30"/>
+
+        <sesion pelicula="13" sala="11" dia="10/09/2011" hora="16:30"/>
+        <sesion pelicula="13" sala="11" dia="10/09/2011" hora="18:30"/>
+        <sesion pelicula="13" sala="11" dia="10/09/2011" hora="20:30"/>
+        <sesion pelicula="13" sala="11" dia="10/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="14" sala="12" dia="10/09/2011" hora="17:00"/>
+
+        <sesion pelicula="15" sala="13" dia="10/09/2011" hora="16:30"/>
+        <sesion pelicula="15" sala="13" dia="10/09/2011" hora="18:30"/>
+        <sesion pelicula="15" sala="13" dia="10/09/2011" hora="20:30"/>
+        <sesion pelicula="15" sala="13" dia="10/09/2011" hora="22:30"/>
+
+        <sesion pelicula="16" sala="12" dia="10/09/2011" hora="22:00"/>
+         
+        <sesion pelicula="17" sala="10" dia="10/09/2011" hora="20:00"/>
+        <sesion pelicula="17" sala="10" dia="10/09/2011" hora="22:00"/>
+        <sesion pelicula="17" sala="10" dia="10/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="18" sala="13" dia="10/09/2011" hora="16:30"/>
+        <sesion pelicula="18" sala="13" dia="10/09/2011" hora="18:30"/>
+        <sesion pelicula="18" sala="13" dia="10/09/2011" hora="20:30"/>
+        <sesion pelicula="18" sala="13" dia="10/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="18" sala="15" dia="10/09/2011" hora="20:30"/>
+        <sesion pelicula="18" sala="15" dia="10/09/2011" hora="22:30"/>
+        
+
+        <sesion pelicula="19" sala="14" dia="10/09/2011" hora="17:00"/>
+        <sesion pelicula="19" sala="14" dia="10/09/2011" hora="19:30"/>
+        <sesion pelicula="19" sala="14" dia="10/09/2011" hora="21:45"/>
+        <sesion pelicula="19" sala="14" dia="10/09/2011" hora="00:05"/>
+    </sesiones>    
+
+    <sesiones >
+        <sesion pelicula="1" sala="1" dia="11/09/2011" hora="17:00"/>
+        <sesion pelicula="1" sala="1" dia="11/09/2011" hora="19:45"/>
+        <sesion pelicula="1" sala="1" dia="11/09/2011" hora="22:30"/>
+        <sesion pelicula="1" sala="15" dia="11/09/2011" hora="00:05"/>
+    
+        <sesion pelicula="2" sala="2" dia="11/09/2011" hora="16:30"/>
+        <sesion pelicula="2" sala="2" dia="11/09/2011" hora="18:15"/>
+        
+        <sesion pelicula="3" sala="3" dia="11/09/2011" hora="17:00"/>
+        <sesion pelicula="3" sala="3" dia="11/09/2011" hora="18:45"/>
+        <sesion pelicula="3" sala="3" dia="11/09/2011" hora="20:30"/>
+        <sesion pelicula="3" sala="3" dia="11/09/2011" hora="22:15"/>
+        <sesion pelicula="3" sala="3" dia="11/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="4" sala="4" dia="11/09/2011" hora="16:30"/>
+        <sesion pelicula="4" sala="4" dia="11/09/2011" hora="18:30"/>
+        <sesion pelicula="4" sala="4" dia="11/09/2011" hora="20:30"/>
+        <sesion pelicula="4" sala="4" dia="11/09/2011" hora="22:30"/>
+
+        <sesion pelicula="5" sala="2" dia="11/09/2011" hora="21:30"/>
+        <sesion pelicula="5" sala="2" dia="11/09/2011" hora="00:05"/>
+       
+        <sesion pelicula="6" sala="5" dia="11/09/2011" hora="17:00"/>
+        <sesion pelicula="6" sala="5" dia="11/09/2011" hora="19:30"/>
+        <sesion pelicula="6" sala="5" dia="11/09/2011" hora="21:45"/>
+        <sesion pelicula="6" sala="5" dia="11/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="7" sala="6" dia="11/09/2011" hora="16:30"/>
+        <sesion pelicula="7" sala="6" dia="11/09/2011" hora="18:00"/>
+        
+        <sesion pelicula="8" sala="7" dia="11/09/2011" hora="16:30"/>
+        <sesion pelicula="8" sala="7" dia="11/09/2011" hora="18:00"/>
+        <sesion pelicula="8" sala="7" dia="11/09/2011" hora="21:00"/>
+        <sesion pelicula="8" sala="7" dia="11/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="9" sala="12" dia="11/09/2011" hora="19:45"/>
+
+        <sesion pelicula="10" sala="8" dia="11/09/2011" hora="17:00"/>
+        <sesion pelicula="10" sala="8" dia="11/09/2011" hora="20:00"/>
+        <sesion pelicula="10" sala="8" dia="11/09/2011" hora="23:00"/>
+        
+        <sesion pelicula="11" sala="9" dia="11/09/2011" hora="17:30"/>
+        <sesion pelicula="11" sala="9" dia="11/09/2011" hora="19:30"/>
+        <sesion pelicula="11" sala="9" dia="11/09/2011" hora="21:30"/>
+        <sesion pelicula="11" sala="9" dia="11/09/2011" hora="23:30"/>
+        
+        <sesion pelicula="12" sala="10" dia="11/09/2011" hora="16:30"/>
+        <sesion pelicula="12" sala="10" dia="11/09/2011" hora="18:30"/>
+
+        <sesion pelicula="13" sala="11" dia="11/09/2011" hora="16:30"/>
+        <sesion pelicula="13" sala="11" dia="11/09/2011" hora="18:30"/>
+        <sesion pelicula="13" sala="11" dia="11/09/2011" hora="20:30"/>
+        <sesion pelicula="13" sala="11" dia="11/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="14" sala="12" dia="11/09/2011" hora="17:00"/>
+
+        <sesion pelicula="15" sala="13" dia="11/09/2011" hora="16:30"/>
+        <sesion pelicula="15" sala="13" dia="11/09/2011" hora="18:30"/>
+        <sesion pelicula="15" sala="13" dia="11/09/2011" hora="20:30"/>
+        <sesion pelicula="15" sala="13" dia="11/09/2011" hora="22:30"/>
+
+        <sesion pelicula="16" sala="12" dia="11/09/2011" hora="22:00"/>
+         
+        <sesion pelicula="17" sala="10" dia="11/09/2011" hora="20:00"/>
+        <sesion pelicula="17" sala="10" dia="11/09/2011" hora="22:00"/>
+        <sesion pelicula="17" sala="10" dia="11/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="18" sala="13" dia="11/09/2011" hora="16:30"/>
+        <sesion pelicula="18" sala="13" dia="11/09/2011" hora="18:30"/>
+        <sesion pelicula="18" sala="13" dia="11/09/2011" hora="20:30"/>
+        <sesion pelicula="18" sala="13" dia="11/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="18" sala="15" dia="11/09/2011" hora="20:30"/>
+        <sesion pelicula="18" sala="15" dia="11/09/2011" hora="22:30"/>
+        
+
+        <sesion pelicula="19" sala="14" dia="11/09/2011" hora="17:00"/>
+        <sesion pelicula="19" sala="14" dia="11/09/2011" hora="19:30"/>
+        <sesion pelicula="19" sala="14" dia="11/09/2011" hora="21:45"/>
+        <sesion pelicula="19" sala="14" dia="11/09/2011" hora="00:05"/>
+    </sesiones>    
+
+    <sesiones >
+        <sesion pelicula="1" sala="1" dia="12/09/2011" hora="17:00"/>
+        <sesion pelicula="1" sala="1" dia="12/09/2011" hora="19:45"/>
+        <sesion pelicula="1" sala="1" dia="12/09/2011" hora="22:30"/>
+        <sesion pelicula="1" sala="15" dia="12/09/2011" hora="00:05"/>
+    
+        <sesion pelicula="2" sala="2" dia="12/09/2011" hora="16:30"/>
+        <sesion pelicula="2" sala="2" dia="12/09/2011" hora="18:15"/>
+        
+        <sesion pelicula="3" sala="3" dia="12/09/2011" hora="17:00"/>
+        <sesion pelicula="3" sala="3" dia="12/09/2011" hora="18:45"/>
+        <sesion pelicula="3" sala="3" dia="12/09/2011" hora="20:30"/>
+        <sesion pelicula="3" sala="3" dia="12/09/2011" hora="22:15"/>
+        <sesion pelicula="3" sala="3" dia="12/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="4" sala="4" dia="12/09/2011" hora="16:30"/>
+        <sesion pelicula="4" sala="4" dia="12/09/2011" hora="18:30"/>
+        <sesion pelicula="4" sala="4" dia="12/09/2011" hora="20:30"/>
+        <sesion pelicula="4" sala="4" dia="12/09/2011" hora="22:30"/>
+
+        <sesion pelicula="5" sala="2" dia="12/09/2011" hora="21:30"/>
+        <sesion pelicula="5" sala="2" dia="12/09/2011" hora="00:05"/>
+       
+        <sesion pelicula="6" sala="5" dia="12/09/2011" hora="17:00"/>
+        <sesion pelicula="6" sala="5" dia="12/09/2011" hora="19:30"/>
+        <sesion pelicula="6" sala="5" dia="12/09/2011" hora="21:45"/>
+        <sesion pelicula="6" sala="5" dia="12/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="7" sala="6" dia="12/09/2011" hora="16:30"/>
+        <sesion pelicula="7" sala="6" dia="12/09/2011" hora="18:00"/>
+        
+        <sesion pelicula="8" sala="7" dia="12/09/2011" hora="16:30"/>
+        <sesion pelicula="8" sala="7" dia="12/09/2011" hora="18:00"/>
+        <sesion pelicula="8" sala="7" dia="12/09/2011" hora="21:00"/>
+        <sesion pelicula="8" sala="7" dia="12/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="9" sala="12" dia="12/09/2011" hora="19:45"/>
+
+        <sesion pelicula="10" sala="8" dia="12/09/2011" hora="17:00"/>
+        <sesion pelicula="10" sala="8" dia="12/09/2011" hora="20:00"/>
+        <sesion pelicula="10" sala="8" dia="12/09/2011" hora="23:00"/>
+        
+        <sesion pelicula="11" sala="9" dia="12/09/2011" hora="17:30"/>
+        <sesion pelicula="11" sala="9" dia="12/09/2011" hora="19:30"/>
+        <sesion pelicula="11" sala="9" dia="12/09/2011" hora="21:30"/>
+        <sesion pelicula="11" sala="9" dia="12/09/2011" hora="23:30"/>
+        
+        <sesion pelicula="12" sala="10" dia="12/09/2011" hora="16:30"/>
+        <sesion pelicula="12" sala="10" dia="12/09/2011" hora="18:30"/>
+
+        <sesion pelicula="13" sala="11" dia="12/09/2011" hora="16:30"/>
+        <sesion pelicula="13" sala="11" dia="12/09/2011" hora="18:30"/>
+        <sesion pelicula="13" sala="11" dia="12/09/2011" hora="20:30"/>
+        <sesion pelicula="13" sala="11" dia="12/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="14" sala="12" dia="12/09/2011" hora="17:00"/>
+
+        <sesion pelicula="15" sala="13" dia="12/09/2011" hora="16:30"/>
+        <sesion pelicula="15" sala="13" dia="12/09/2011" hora="18:30"/>
+        <sesion pelicula="15" sala="13" dia="12/09/2011" hora="20:30"/>
+        <sesion pelicula="15" sala="13" dia="12/09/2011" hora="22:30"/>
+
+        <sesion pelicula="16" sala="12" dia="12/09/2011" hora="22:00"/>
+         
+        <sesion pelicula="17" sala="10" dia="12/09/2011" hora="20:00"/>
+        <sesion pelicula="17" sala="10" dia="12/09/2011" hora="22:00"/>
+        <sesion pelicula="17" sala="10" dia="12/09/2011" hora="00:05"/>
+        
+        <sesion pelicula="18" sala="13" dia="12/09/2011" hora="16:30"/>
+        <sesion pelicula="18" sala="13" dia="12/09/2011" hora="18:30"/>
+        <sesion pelicula="18" sala="13" dia="12/09/2011" hora="20:30"/>
+        <sesion pelicula="18" sala="13" dia="12/09/2011" hora="22:30"/>
+        
+        <sesion pelicula="18" sala="15" dia="12/09/2011" hora="20:30"/>
+        <sesion pelicula="18" sala="15" dia="12/09/2011" hora="22:30"/>
+        
+
+        <sesion pelicula="19" sala="14" dia="12/09/2011" hora="17:00"/>
+        <sesion pelicula="19" sala="14" dia="12/09/2011" hora="19:30"/>
+        <sesion pelicula="19" sala="14" dia="12/09/2011" hora="21:45"/>
+        <sesion pelicula="19" sala="14" dia="12/09/2011" hora="00:05"/>
+    </sesiones>
+</cartelera>
