@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cine SYSTEM "cine.dtd">
+
+<!--
+    Documento  : cine.xml
+    Description: Información de un cine
+-->
+
+<cine>
+    <nombre>Kinépolis Granada</nombre>
+    <direccion>Parque Comercial Kinépolis. Purchil (Granada)</direccion>
+
+    <salas>
+        <sala num="1" filas="10" asientosFila="20"/>
+        <sala num="2" filas="15" asientosFila="22"/>
+        <sala num="3" filas="20" asientosFila="21"/>
+        <sala num="4" filas="20" asientosFila="21"/>
+        <sala num="5" filas="15" asientosFila="22"/>
+        <sala num="6" filas="10" asientosFila="21"/>
+        <sala num="7" filas="10" asientosFila="21"/>
+        <sala num="8" filas="15" asientosFila="22"/>
+        <sala num="9" filas="10" asientosFila="20"/>
+        <sala num="10" filas="10" asientosFila="20"/>
+        <sala num="11" filas="15" asientosFila="21"/>
+        <sala num="12" filas="20" asientosFila="21"/>
+        <sala num="13" filas="20" asientosFila="21"/>
+        <sala num="14" filas="15" asientosFila="22"/>
+        <sala num="15" filas="10" asientosFila="20"/>
+    </salas>
+</cine>

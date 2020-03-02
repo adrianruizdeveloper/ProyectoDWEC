@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ocupacion>
+    <sesiones dia="06/09/2011">
+        <sesion hora="17:00" sala="1">
+            <Fila numero="0">
+                <Asiento numero="1"/>
+            </Fila>
+            <Fila numero="1">
+                <Asiento numero="2"/>
+            </Fila>xxxxx
+            <Fila numero="2">
+                <Asiento numero="3"/>
+            </Fila>
+            <Fila numero="3">
+                <Asiento numero="4"/>
+            </Fila>
+            <Fila numero="7">
+                <Asiento numero="10"/>
+            </Fila>
+            <Fila numero="8">
+                <Asiento numero="9"/>
+            </Fila>
+            <Fila numero="9">
+                <Asiento numero="8"/>
+                <Asiento numero="9"/>
+                <Asiento numero="10"/>
+            </Fila>
+        </sesion>
+    </sesiones>
+    <sesiones dia="12/09/2011">
+        <sesion hora="17:00" sala="1">
+            <Fila numero="0">
+                <Asiento numero="10"/>
+            </Fila>
+            <Fila numero="2">
+                <Asiento numero="9"/>
+            </Fila>
+            <Fila numero="4">
+                <Asiento numero="10"/>
+            </Fila>
+        </sesion>
+    </sesiones>
+    <sesiones dia="12/09/2011">
+        <sesion hora="22:30" sala="1">
+            <Fila numero="0">
+                <Asiento numero="11"/>
+            </Fila>
+            <Fila numero="1">
+                <Asiento numero="11"/>
+            </Fila>
+            <Fila numero="2">
+                <Asiento numero="11"/>
+            </Fila>
+            <Fila numero="3">
+                <Asiento numero="11"/>
+            </Fila>
+        </sesion>
+    </sesiones>
+</Ocupacion>
