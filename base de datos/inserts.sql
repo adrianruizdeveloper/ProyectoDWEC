@@ -1,11 +1,11 @@
 	#tipos_categorias
-INSERT INTO `tipos_categoria` (`id_categoria`,`descripcion_categoria`) VALUES  (1, 'Acción');
-INSERT INTO `tipos_categoria` (`id_categoria`,`descripcion_categoria`) VALUES  (2, 'Aventuras');
-INSERT INTO `tipos_categoria` (`id_categoria`,`descripcion_categoria`) VALUES  (3, 'Comedia');
-INSERT INTO `tipos_categoria` (`id_categoria`,`descripcion_categoria`) VALUES  (4, 'Terror');
-INSERT INTO `tipos_categoria` (`id_categoria`,`descripcion_categoria`) VALUES  (5, 'Musical');
-INSERT INTO `tipos_categoria` (`id_categoria`,`descripcion_categoria`) VALUES  (6, 'Thriller');
-INSERT INTO `tipos_categoria` (`id_categoria`,`descripcion_categoria`) VALUES  (7, 'Drama');
+INSERT INTO `tipos_categorias` (`id_categoria`,`descripcion_categoria`) VALUES  (1, "Acción");
+INSERT INTO `tipos_categorias` (`id_categoria`,`descripcion_categoria`) VALUES  (2, 'Aventuras');
+INSERT INTO `tipos_categorias` (`id_categoria`,`descripcion_categoria`) VALUES  (3, 'Comedia');
+INSERT INTO `tipos_categorias` (`id_categoria`,`descripcion_categoria`) VALUES  (4, 'Terror');
+INSERT INTO `tipos_categorias` (`id_categoria`,`descripcion_categoria`) VALUES  (5, 'Musical');
+INSERT INTO `tipos_categorias` (`id_categoria`,`descripcion_categoria`) VALUES  (6, 'Thriller');
+INSERT INTO `tipos_categorias` (`id_categoria`,`descripcion_categoria`) VALUES  (7, 'Drama');
 
 	#tipos_restricciones
 INSERT INTO `tipos_restricciones` (`id_restriccion`,`descripcion_restriccion`,`edad_restriccion`) VALUES  (1, 'Apta para todos los públicos','ninguna');
@@ -43,10 +43,10 @@ INSERT INTO `tipos_roles` (`id_rol`, `descripcion_rol`) VALUES (1, 'admin');
 INSERT INTO `tipos_roles` (`id_rol`, `descripcion_rol`) VALUES (2, 'usuario');
 
 	#Usuarios
-INSERT INTO `usuarios` (`id_usu`, `rol_usu`, `nombre_usu`, `apellido1_usu`, `apellido2_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`) VALUES (1, "usuario1",1, "nusuario1", "ap1usuario1", "ap2usuario1", '1990-07-12', "666666666", "correo1@correo.es");
-INSERT INTO `usuarios` (`id_usu`, `rol_usu`, `nombre_usu`, `apellido1_usu`, `apellido2_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`) VALUES (2, "usuario2",2, "nusuario2", "ap1usuario2", "ap2usuario2", '1995-02-10', "666666666", "correo2@correo.es");
-INSERT INTO `usuarios` (`id_usu`, `rol_usu`, `nombre_usu`, `apellido1_usu`, `apellido2_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`) VALUES (3, "usuario3",1, "nusuario3", "ap1usuario3", "ap2usuario3", '2005-02-14', "666666666", "correo3@correo.es");
-INSERT INTO `usuarios` (`id_usu`, `rol_usu`, `nombre_usu`, `apellido1_usu`, `apellido2_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`) VALUES (4, "usuario4",1, "nusuario4", "ap1usuario4", "ap2usuario4", '1970-11-03', "666666666", "correo4@correo.es");
+INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellido1_usu`, `apellido2_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`) VALUES (1, "usuario1",1, "nusuario1", "ap1usuario1", "ap2usuario1", '1990-07-12', "666666666", "correo1@correo.es");
+INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellido1_usu`, `apellido2_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`) VALUES (2, "usuario2",2, "nusuario2", "ap1usuario2", "ap2usuario2", '1995-02-10', "666666666", "correo2@correo.es");
+INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellido1_usu`, `apellido2_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`) VALUES (3, "usuario3",1, "nusuario3", "ap1usuario3", "ap2usuario3", '2005-02-14', "666666666", "correo3@correo.es");
+INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellido1_usu`, `apellido2_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`) VALUES (4, "usuario4",1, "nusuario4", "ap1usuario4", "ap2usuario4", '1970-11-03', "666666666", "correo4@correo.es");
 
 	#contrasenas
 INSERT INTO `contrasenas` (`idusuario_contra`, `contrasena_contra`, `fecha_contra`) VALUES  (1, 'usuario', '2020-03-05');
@@ -56,11 +56,36 @@ INSERT INTO `contrasenas` (`idusuario_contra`, `contrasena_contra`, `fecha_contr
 
 	
 	#asientos
+INSERT INTO `asientos` (`sesion_asiento`, `fila_asiento`, `n_asiento`) VALUES  (1,7,4);
+INSERT INTO `asientos` (`sesion_asiento`, `fila_asiento`, `n_asiento`) VALUES  (1,4,3);
+INSERT INTO `asientos` (`sesion_asiento`, `fila_asiento`, `n_asiento`) VALUES  (2,7,4);
+INSERT INTO `asientos` (`sesion_asiento`, `fila_asiento`, `n_asiento`) VALUES  (1,2,1);
+INSERT INTO `asientos` (`sesion_asiento`, `fila_asiento`, `n_asiento`) VALUES  (1,6,9);
+INSERT INTO `asientos` (`sesion_asiento`, `fila_asiento`, `n_asiento`) VALUES  (2,1,1);
+INSERT INTO `asientos` (`sesion_asiento`, `fila_asiento`, `n_asiento`) VALUES  (3,2,2);
+INSERT INTO `asientos` (`sesion_asiento`, `fila_asiento`, `n_asiento`) VALUES  (2,3,3);
+INSERT INTO `asientos` (`sesion_asiento`, `fila_asiento`, `n_asiento`) VALUES  (1,4,4);
+INSERT INTO `asientos` (`sesion_asiento`, `fila_asiento`, `n_asiento`) VALUES  (4,5,5);
+INSERT INTO `asientos` (`sesion_asiento`, `fila_asiento`, `n_asiento`) VALUES  (4,6,6);
+INSERT INTO `asientos` (`sesion_asiento`, `fila_asiento`, `n_asiento`) VALUES  (4,7,7);
+
+	#tickets
+INSERT INTO `tickets` (`id_ticket`, `usuario_ticket`, `fecha_ticket`, `hora_ticket`, `sesion_ticket`, `fila_asiento_ticket`, `num_asiento_ticket`) VALUES(1, 1, '2020-03-05', '17:30', 1, 7 ,4);
+INSERT INTO `tickets` (`id_ticket`, `usuario_ticket`, `fecha_ticket`, `hora_ticket`, `sesion_ticket`, `fila_asiento_ticket`, `num_asiento_ticket`) VALUES(2, 1, '2020-03-04', '13:35', 2, 7 ,4);
+INSERT INTO `tickets` (`id_ticket`, `usuario_ticket`, `fecha_ticket`, `hora_ticket`, `sesion_ticket`, `fila_asiento_ticket`, `num_asiento_ticket`) VALUES(3, 2, '2020-03-03', '12:30', 1, 2 ,1);
+INSERT INTO `tickets` (`id_ticket`, `usuario_ticket`, `fecha_ticket`, `hora_ticket`, `sesion_ticket`, `fila_asiento_ticket`, `num_asiento_ticket`) VALUES(4, 3, '2020-03-02', '16:30', 1, 6 ,9);
+INSERT INTO `tickets` (`id_ticket`, `usuario_ticket`, `fecha_ticket`, `hora_ticket`, `sesion_ticket`, `fila_asiento_ticket`, `num_asiento_ticket`) VALUES(5, 2, '2020-03-01', '11:30', 4, 6 ,6);
+INSERT INTO `tickets` (`id_ticket`, `usuario_ticket`, `fecha_ticket`, `hora_ticket`, `sesion_ticket`, `fila_asiento_ticket`, `num_asiento_ticket`) VALUES(6, 2, '2020-03-05', '10:30', 4, 7 ,7);
 
 
-
-
-
+	#valoraciones
+	
+INSERT INTO `valoraciones` (`idusuario_val`, `pelicula_val`, `valoracion_val`) VALUES  (1, 1 , 3);
+INSERT INTO `valoraciones` (`idusuario_val`, `pelicula_val`, `valoracion_val`) VALUES  (2, 5 , 5);
+INSERT INTO `valoraciones` (`idusuario_val`, `pelicula_val`, `valoracion_val`) VALUES  (1, 4 , 5);
+INSERT INTO `valoraciones` (`idusuario_val`, `pelicula_val`, `valoracion_val`) VALUES  (3, 2 , 1);
+INSERT INTO `valoraciones` (`idusuario_val`, `pelicula_val`, `valoracion_val`) VALUES  (3, 6 , 2);
+INSERT INTO `valoraciones` (`idusuario_val`, `pelicula_val`, `valoracion_val`) VALUES  (3, 1 , 4);
 
 
 
