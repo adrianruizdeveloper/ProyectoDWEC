@@ -3,7 +3,7 @@
 try {
       $user = "root";  // usuario con el que se va conectar con MySQL
       $pass = "";  // contraseña del usuario 
-      $dbname = "usuarios";  //nombre de la base de datos
+      $dbname = "peliculas";  //nombre de la base de datos
       $db2 = new PDO("mysql:host=localhost; dbname=$dbname", $user, $pass);  //conectar con MySQL y SELECCIONAR LA BBDD
     $db2->exec("set names utf8");
     $db2->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
