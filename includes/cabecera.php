@@ -68,7 +68,7 @@ function cabecera($archivo){
     </div>
 </div>
 
-<div class="modal" id="myModalregistro" data-backdrop="static">
+<div class="modal" id="myModalregistro">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <!-- Modal Header -->

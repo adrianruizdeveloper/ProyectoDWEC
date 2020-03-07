@@ -2,6 +2,10 @@
 button:focus {
     outline: 0;
 }
+.sidebar{
+    border-radius: 10px;
+    background: lightblue;
+}
 
 .navbar .dropdown-menu .form-control {
     width: 200px;

@@ -16,24 +16,39 @@
 
 <body>
     <?php session_start();
-    require "includes/cabecera.php" ?>
+    require "includes/cabecera.php";
+    cabecera("index");
+    ?>
 
 
     <div class="container body center">
         <div class="row">
+            <div class="col-md-9">
+                <div class="row">
             <?php
             include('functions/connectPDO.php');
-
+            include('functions/querys.php');
             $db = pdo();
             $db->exec('use peliculas;');
-            $request = $db->query('select * from peliculas');
+            $request = $db->query("SELECT * FROM sesiones INNER JOIN peliculas ON sesiones.peliculas_id_peli = peliculas.id_peli where sesiones.fecha_sesion = '2020-03-07'");
             while ($fila = $request->fetch(PDO::FETCH_ASSOC)) {
-                echo "<div class='col-xs-12 col-md-6 col-lg-4 text-center pelicula'>";
-                echo "<img  class='caratula' src='images/" . $fila["id_peli"] . ".jpg'><br> ";
-                echo "<p class='title'>" . $fila["nombre_peli"] . "</p><br>";
-                echo "<a href='#' class='btn btn-secondary btn-lg active button-caratula' role='button'aria-pressed='true'>Compra ya!</a></div>";
+                echo "<div class='col-xs-12 col-md-6 col-lg-4 text-center'>";
+                echo "<h4 class='title'>" . $fila["nombre_peli"] . "</h4><br>";
+                echo "<img  class='caratula' src='images/" . $fila["peliculas_id_peli"] . ".jpg'><br> ";
+                echo "</div>";
+                echo "<div class='col-xs-12 col-md-6 col-lg-8 text-center'>";
+                get_sesions_of_pelis($db, $fila["id_peli"] );
+                echo "<span class='align-bottom'>";
+                echo "";
+                echo "</span>";
+                echo "</div>";
             }
             ?>
+            </div>
+            </div>
+            <div class="col-md-3 sidebar">
+                <p>esto es el sidebar</p>
+            </div>
         </div>
     </div>
 
