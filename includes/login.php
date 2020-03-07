@@ -16,4 +16,4 @@
     </form>
     <span class="text-danger error"></span>
 </li>
-<script src="assets/js/login.js"></script>
+<script src=<?php echo $loginjs;?>></script>
