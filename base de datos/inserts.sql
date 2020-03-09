@@ -25,12 +25,12 @@ INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`) VALUES  (7, 'Sal
 INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`) VALUES  (8, 'Sala 8', '300');
 
 	#peliculas
-INSERT INTO `peliculas` (`id_peli`,`nombre_peli`, `nombre_director_peli`, `fecha_peli`, `categoria1_peli`, `restriccion_peli`) VALUES  (1, 'Aves de presa y la fantabulosa emancipación de Harley Quinn', 'Cathy Yan', '2020-07-02', 3, 5);
-INSERT INTO `peliculas` (`id_peli`,`nombre_peli`, `nombre_director_peli`, `fecha_peli`, `categoria1_peli`, `restriccion_peli`) VALUES  (2, 'ADÚ', 'Salvador Calvo', '2020-31-1', 7, 5);
-INSERT INTO `peliculas` (`id_peli`,`nombre_peli`, `nombre_director_peli`, `fecha_peli`, `categoria1_peli`, `restriccion_peli`) VALUES  (3, 'Especiales', 'Olivier Nakache, Éic Toledano', '2020-28-02', 3, 5);
-INSERT INTO `peliculas` (`id_peli`,`nombre_peli`, `nombre_director_peli`, `fecha_peli`, `categoria1_peli`, `restriccion_peli`) VALUES  (4, 'El Señor de los Anillos: el retorno del Rey', 'Peter Jackson', '2003-17-12', 2, 3);
-INSERT INTO `peliculas` (`id_peli`,`nombre_peli`, `nombre_director_peli`, `fecha_peli`, `categoria1_peli`, `restriccion_peli`) VALUES  (5, 'Kill Bill: Volumen 1', 'Quentin Tarantino', '2003-10-10', 1, 5);
-INSERT INTO `peliculas` (`id_peli`,`nombre_peli`, `nombre_director_peli`, `fecha_peli`, `categoria1_peli`, `restriccion_peli`) VALUES  (6, 'Star Wars: Episodio IX - El ascenso de Skywalker', 'Jeffrey Jacob Abrams', '2019-12-16', 2, 3);
+INSERT INTO `peliculas` (`id_peli`,`nombre_peli`, `nombre_director_peli`, `fecha_peli`, `categoria1_peli`, `restriccion_peli`, `caratula`) VALUES  (1, 'Aves de presa', 'Cathy Yan', '2020-07-02', 3, 5, "avesdepresaylafantabulosa.jpg");
+INSERT INTO `peliculas` (`id_peli`,`nombre_peli`, `nombre_director_peli`, `fecha_peli`, `categoria1_peli`, `restriccion_peli`, `caratula`) VALUES  (2, 'ADÚ', 'Salvador Calvo', '2020-31-1', 7, 5,"adu.jpg");
+INSERT INTO `peliculas` (`id_peli`,`nombre_peli`, `nombre_director_peli`, `fecha_peli`, `categoria1_peli`, `restriccion_peli`, `caratula`) VALUES  (3, 'Especiales', 'Olivier Nakache, Éic Toledano', '2020-28-02', 3, 5,"especiales.jpg");
+INSERT INTO `peliculas` (`id_peli`,`nombre_peli`, `nombre_director_peli`, `fecha_peli`, `categoria1_peli`, `restriccion_peli`, `caratula`) VALUES  (4, 'E.S.A: El retorno del Rey', 'Peter Jackson', '2003-17-12', 2, 3, "esaretorno.jpg");
+INSERT INTO `peliculas` (`id_peli`,`nombre_peli`, `nombre_director_peli`, `fecha_peli`, `categoria1_peli`, `restriccion_peli`, `caratula`) VALUES  (5, 'Kill Bill: Volumen 1', 'Quentin Tarantino', '2003-10-10', 1, 5,"killbill1.jpg");
+INSERT INTO `peliculas` (`id_peli`,`nombre_peli`, `nombre_director_peli`, `fecha_peli`, `categoria1_peli`, `restriccion_peli`, `caratula`) VALUES  (6, 'SW: Episodio IX - El ascenso de Skywalker', 'Jeffrey Jacob Abrams', '2019-12-16', 2, 3,"swix.jpg");
 
 	#sesion
 INSERT INTO `sesiones` (`id_sesion`,`peliculas_id_peli`, `fecha_sesion`, `hora_sesion`, `sala_sesion`) VALUES  (1, 3, '2020-03-30', '18:00', 2);
@@ -42,17 +42,19 @@ INSERT INTO `sesiones` (`id_sesion`,`peliculas_id_peli`, `fecha_sesion`, `hora_s
 INSERT INTO `tipos_roles` (`id_rol`, `descripcion_rol`) VALUES (1, 'admin');
 INSERT INTO `tipos_roles` (`id_rol`, `descripcion_rol`) VALUES (2, 'usuario');
 
-	#Usuarios
-INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellido1_usu`, `apellido2_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`) VALUES (1, "usuario1",1, "nusuario1", "ap1usuario1", "ap2usuario1", '1990-07-12', "666666666", "correo1@correo.es");
-INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellido1_usu`, `apellido2_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`) VALUES (2, "usuario2",2, "nusuario2", "ap1usuario2", "ap2usuario2", '1995-02-10', "666666666", "correo2@correo.es");
-INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellido1_usu`, `apellido2_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`) VALUES (3, "usuario3",1, "nusuario3", "ap1usuario3", "ap2usuario3", '2005-02-14', "666666666", "correo3@correo.es");
-INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellido1_usu`, `apellido2_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`) VALUES (4, "usuario4",1, "nusuario4", "ap1usuario4", "ap2usuario4", '1970-11-03', "666666666", "correo4@correo.es");
-
 	#contrasenas
-INSERT INTO `contrasenas` (`idusuario_contra`, `contrasena_contra`, `fecha_contra`) VALUES  (1, 'usuario', '2020-03-05');
-INSERT INTO `contrasenas` (`idusuario_contra`, `contrasena_contra`, `fecha_contra`) VALUES  (2, 'usuario', '2020-03-05');
-INSERT INTO `contrasenas` (`idusuario_contra`, `contrasena_contra`, `fecha_contra`) VALUES  (3, 'usuario', '2020-03-05');
-INSERT INTO `contrasenas` (`idusuario_contra`, `contrasena_contra`, `fecha_contra`) VALUES  (4, 'usuario', '2020-03-05');
+INSERT INTO `contrasenas` (`id_contrasena`, `contrasena_contra`, `fecha_modificacion`) VALUES  (1, 'usuario', '2020-03-05');
+INSERT INTO `contrasenas` (`id_contrasena`, `contrasena_contra`, `fecha_modificacion`) VALUES  (2, 'usuario', '2020-03-05');
+INSERT INTO `contrasenas` (`id_contrasena`, `contrasena_contra`, `fecha_modificacion`) VALUES  (3, 'usuario', '2020-03-05');
+INSERT INTO `contrasenas` (`id_contrasena`, `contrasena_contra`, `fecha_modificacion`) VALUES  (4, 'usuario', '2020-03-05');
+
+	#Usuarios
+INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellidos_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`,`id_contrasena_usu`) VALUES (1, "usuario1",1, "nusuario1", "ap1usuario1", '1990-07-12', "666666666", "correo1@correo.es", 1);
+INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellidos_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`,`id_contrasena_usu`) VALUES (2, "usuario2",2, "nusuario2", "ap1usuario2", '1995-02-10', "666666666", "correo2@correo.es",2);
+INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellidos_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`,`id_contrasena_usu`) VALUES (3, "usuario3",1, "nusuario3", "ap1usuario3", '2005-02-14', "666666666", "correo3@correo.es",3);
+INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellidos_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`,`id_contrasena_usu`) VALUES (4, "usuario4",1, "nusuario4", "ap1usuario4", '1970-11-03', "666666666", "correo4@correo.es",4);
+
+
 
 	
 	#asientos
