@@ -6,12 +6,14 @@ function cabecera($archivo){
         $index = "index.php";
         $logout = "includes/logout.php";
         $loginjs = "assets/js/login.js";
+        $registrojs = "assets/js/registro.js";
         $login = "includes/login.php";
     }else{
         $registro = "registro_modal.php";
         $index = "../index.php";
         $logout = "logout.php";
         $loginjs = "../assets/js/login.js";
+        $registrojs = "../assets/js/registro.js";
         $login = "login.php";
     }?>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
@@ -74,7 +76,7 @@ function cabecera($archivo){
             <!-- Modal Header -->
             <div class="modal-header">
                 <h4 class="modal-title">Registro</h4>
-                <button type="button" class="close" data-dismiss="modal"><i class='fa fa-close' style='font-size:24px;color:red'></i>
+                <button type="button" class="close" data-dismiss="modal"><span style="color: red;">X</span></i>
                 </button>
             </div>
             <!-- Modal body -->

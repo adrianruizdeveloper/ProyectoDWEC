@@ -1,4 +1,4 @@
-<form method="post" name="registro">
+<form name="registro">
     <div class="container">
         <div class="form-row">
             <div class="col-md-5">
@@ -31,7 +31,7 @@
 </form>
 
 <span class="text-danger"><?php echo @$msg ?></span>
-
+<script src=<?php echo $registrojs;?>></script>
 
 
 
