@@ -43,16 +43,16 @@ INSERT INTO `tipos_roles` (`id_rol`, `descripcion_rol`) VALUES (1, 'admin');
 INSERT INTO `tipos_roles` (`id_rol`, `descripcion_rol`) VALUES (2, 'usuario');
 
 	#contrasenas
-INSERT INTO `contrasenas` (`id_contrasena`, `contrasena_contra`, `fecha_modificacion`) VALUES  (1, 'usuario', '2020-03-05');
-INSERT INTO `contrasenas` (`id_contrasena`, `contrasena_contra`, `fecha_modificacion`) VALUES  (2, 'usuario', '2020-03-05');
-INSERT INTO `contrasenas` (`id_contrasena`, `contrasena_contra`, `fecha_modificacion`) VALUES  (3, 'usuario', '2020-03-05');
-INSERT INTO `contrasenas` (`id_contrasena`, `contrasena_contra`, `fecha_modificacion`) VALUES  (4, 'usuario', '2020-03-05');
+INSERT INTO `contrasenas` (`id_contrasena`, `contrasena_contra`, `fecha_modificacion`) VALUES  (1, 'usuario', '2020-03-05 00:00:00');
+INSERT INTO `contrasenas` (`id_contrasena`, `contrasena_contra`, `fecha_modificacion`) VALUES  (2, 'usuario', '2020-03-05 00:00:00');
+INSERT INTO `contrasenas` (`id_contrasena`, `contrasena_contra`, `fecha_modificacion`) VALUES  (3, 'usuario', '2020-03-05 00:00:00');
+INSERT INTO `contrasenas` (`id_contrasena`, `contrasena_contra`, `fecha_modificacion`) VALUES  (4, 'usuario', '2020-03-05 00:00:00');
 
 	#Usuarios
-INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellidos_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`,`id_contrasena_usu`) VALUES (1, "usuario1",1, "nusuario1", "ap1usuario1", '1990-07-12', "666666666", "correo1@correo.es", 1);
-INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellidos_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`,`id_contrasena_usu`) VALUES (2, "usuario2",2, "nusuario2", "ap1usuario2", '1995-02-10', "666666666", "correo2@correo.es",2);
-INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellidos_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`,`id_contrasena_usu`) VALUES (3, "usuario3",1, "nusuario3", "ap1usuario3", '2005-02-14', "666666666", "correo3@correo.es",3);
-INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellidos_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`,`id_contrasena_usu`) VALUES (4, "usuario4",1, "nusuario4", "ap1usuario4", '1970-11-03', "666666666", "correo4@correo.es",4);
+INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellidos_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`,`idcontrasena_usu`) VALUES (1, "usuario1",1, "nusuario1", "ap1usuario1", '1990-07-12', "666666666", "correo1@correo.es", 1);
+INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellidos_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`,`idcontrasena_usu`) VALUES (2, "usuario2",2, "nusuario2", "ap1usuario2", '1995-02-10', "666666666", "correo2@correo.es",2);
+INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellidos_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`,`idcontrasena_usu`) VALUES (3, "usuario3",1, "nusuario3", "ap1usuario3", '2005-02-14', "666666666", "correo3@correo.es",3);
+INSERT INTO `usuarios` (`id_usu`, `usuario_usu`, `rol_usu`, `nombre_usu`, `apellidos_usu`, `fechanac_usu`, `telefono_usu`, `correo_usu`,`idcontrasena_usu`) VALUES (4, "usuario4",1, "nusuario4", "ap1usuario4", '1970-11-03', "666666666", "correo4@correo.es",4);
 
 
 
