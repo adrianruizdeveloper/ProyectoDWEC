@@ -39,12 +39,8 @@
                         echo "</div>";
                         echo "<div class='col-xs-12 col-md-6 col-lg-8 text-center'>";
                         get_sesions_of_pelis($db, $fila["peliculas_id_peli"]);
-                        echo "<span class='align-bottom'>";
-                        echo "";
-                        echo "</span>";
                         echo "</div>";
                     }
-
                     ?>
                 </div>
             </div>
@@ -56,5 +52,6 @@
 
     <?php require "includes/pie.php" ?>
 </body>
+<script src="functions/ajax/function_ajax.js"></script>
 
 </html>
