@@ -7,8 +7,9 @@ function get_sesions_of_pelis($db, $id_peli)
     // print $query;
     print "<h5 class='title text-center'>" . $dia_actual . "</h5><br>";
     while ($fila = $request->fetch(PDO::FETCH_ASSOC)) {
-        
-        $hour_format = date($fila['hora_sesion']);
-        echo "<a href='#' class='btn btn-secondary btn-lg active button-caratula' role='button'aria-pressed='true'>" . $hour_format . '</a><br>';
+
+        $hour_format = $date = strtotime($fila['hora_sesion']);
+        $hour = date(' H:i', $hour_format);
+        echo "<a href='#' class='btn btn-secondary btn-lg active button-caratula' role='button'aria-pressed='true'>" . $hour . '</a><br>';
     }
 }

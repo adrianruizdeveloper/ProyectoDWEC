@@ -25,26 +25,28 @@
         <div class="row">
             <div class="col-md-9">
                 <div class="row">
-            <?php
-            include('functions/connectPDO.php');
-            include('functions/querys.php');
-            $db = pdo();
-            $db->exec('use peliculas;');
-            $request = $db->query("SELECT * FROM sesiones INNER JOIN peliculas ON sesiones.peliculas_id_peli = peliculas.id_peli where sesiones.fecha_sesion = '2020-03-07'");
-            while ($fila = $request->fetch(PDO::FETCH_ASSOC)) {
-                echo "<div class='col-xs-12 col-md-6 col-lg-4 text-center'>";
-                echo "<h4 class='title'>" . $fila["nombre_peli"] . "</h4><br>";
-                echo "<img  class='caratula' src='images/" . $fila["peliculas_id_peli"] . ".jpg'><br> ";
-                echo "</div>";
-                echo "<div class='col-xs-12 col-md-6 col-lg-8 text-center'>";
-                get_sesions_of_pelis($db, $fila["id_peli"] );
-                echo "<span class='align-bottom'>";
-                echo "";
-                echo "</span>";
-                echo "</div>";
-            }
-            ?>
-            </div>
+                    <?php
+                    include('functions/connectPDO.php');
+                    include('functions/querys.php');
+                    $db = pdo();
+                    $dia_actual = date("Y-m-d");
+                    $db->exec('use peliculas;');
+                    $peliculas = $db->query("SELECT * FROM sesiones INNER JOIN peliculas ON sesiones.peliculas_id_peli = peliculas.id_peli where sesiones.fecha_sesion = '" . $dia_actual . "' group by peliculas_id_peli");
+                    foreach ($peliculas as $fila) {
+                        echo "<div class='col-xs-12 col-md-6 col-lg-4 text-center'>";
+                        echo "<h4 class='title'>" . $fila["nombre_peli"] . "</h4><br>";
+                        echo "<img  class='caratula' src='images/" . $fila["caratula"] . "'><br> ";
+                        echo "</div>";
+                        echo "<div class='col-xs-12 col-md-6 col-lg-8 text-center'>";
+                        get_sesions_of_pelis($db, $fila["peliculas_id_peli"]);
+                        echo "<span class='align-bottom'>";
+                        echo "";
+                        echo "</span>";
+                        echo "</div>";
+                    }
+
+                    ?>
+                </div>
             </div>
             <div class="col-md-3 sidebar">
                 <p>esto es el sidebar</p>
