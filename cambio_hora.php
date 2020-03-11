@@ -1,7 +1,7 @@
 <?php
 session_start();
 try{
-include "assets/conectors/conector.php";
+include "../assets/conectors/conector.php";
 $nom_pelicula = $_POST['pelicula'];
 $fecha_sesion = $_POST['fecha'];
 

@@ -17,8 +17,8 @@
 <body>
     <?php session_start();
     require "includes/cabecera.php";
-    cabecera("index");
     $dia_actual = date("d-m-Y");
+    cabecera("index");
     ?>
 
 
@@ -44,16 +44,22 @@
                         get_sesions_of_pelis($db, $fila["peliculas_id_peli"]);
                         echo "</div>";
                     }
+                    include("sesiones_semanales.php");
                     ?>
                 </div>
             </div>
+            
             <!-- <div class="col-md-3 sidebar">
                 <p>esto es el sidebar</p>
             </div> -->
         </div>
     </div>
+    <?php 
 
-    <?php require "includes/pie.php" ?>
+    // require "includes/sesiones_semanal.php"; 
+    require "includes/pie.php" ;
+    ?>
+
 </body>
 <script src="functions/ajax/function_ajax.js"></script>
 

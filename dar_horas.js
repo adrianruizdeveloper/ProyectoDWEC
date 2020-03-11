@@ -8,7 +8,7 @@ $(document).change(function () {
                 
     $.ajax({
         type: 'POST',
-        url: 'cambio_hora.php',
+        url: '../includes/cambio_hora.php',
         data: {'fecha': fecha, 'pelicula': pelicula},
     })
             .done(function(data){
