@@ -1,4 +1,6 @@
 <?php
     session_start();
-    echo $_SESSION['sesion_selected'];
+    $sesion_selected =  $_SESSION['sesion_selected'];
+
+    
 ?>

@@ -22,12 +22,12 @@
     ?>
 
 
-<div class="row text-center">
-    <div class="container body center">
-        <?php
-        echo "<h1 class='text-center'>Sesiones: " . $dia_actual . "</h1>";
-        
-        ?>
+    <div class="row text-center">
+        <div class="container body center">
+            <?php
+            echo "<h1 class='text-center'>Sesiones: " . $dia_actual . "</h1>";
+
+            ?>
             <div class="col-md-12">
                 <div class="row">
                     <?php
@@ -44,23 +44,33 @@
                         get_sesions_of_pelis($db, $fila["peliculas_id_peli"]);
                         echo "</div>";
                     }
-                    include("sesiones_semanales.php");
                     ?>
                 </div>
+                <h1 class='text-center'>Proximas sesiones</h1>
+                <div class="row">
+                    <div class='col-md-12'>
+
+                        <?php
+                        include("sesiones_semanales.php");
+
+                        ?>
+                    </div>
+                </div>
             </div>
-            
+
             <!-- <div class="col-md-3 sidebar">
                 <p>esto es el sidebar</p>
             </div> -->
         </div>
     </div>
-    <?php 
+    <?php
 
     // require "includes/sesiones_semanal.php"; 
-    require "includes/pie.php" ;
+    require "includes/pie.php";
     ?>
 
 </body>
 <script src="functions/ajax/function_ajax.js"></script>
+<script src="functions/ajax/dar_horas.js"></script>
 
 </html>
