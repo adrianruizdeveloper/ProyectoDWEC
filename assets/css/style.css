@@ -23,18 +23,47 @@ footer{
 .footer-copyright{
     background: #343a40!important;
 }
+/* boton sesion */
 .button-caratula{
-    margin-top: 5px;    
+    margin-top: 5px;
+    font-size: 12px !important;
+    padding-bottom: 4px !important;
+    padding-top: 4px !important;
+}
+
+
+.button_div_sesion{
+    width: auto !important;
+    padding:0px !important;
+    margin-right:5px !important;
+    margin-bottom: 5px !important;
+
 }
 .title{
     font-weight: bold;
 }
 .caratula{
     width: 200px;
+    height: 285px;
 }
 .pelicula{
     margin-top: 10px;
 }
 #n_usuario{
     color: white;
+}
+/* media Querys */
+@media (min-width: 991px) {
+    .button_div_sesion.col-lg-2{
+        /* margin-left: 15px !important; */
+        margin-right:25px !important;
+    }
+    
+}
+@media (min-width: 1200px) {
+    .button_div_sesion.col-lg-2{
+        /* margin-left: 15px !important; */
+        margin-right:18px !important;
+    }
+    
 }
