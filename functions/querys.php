@@ -23,3 +23,40 @@ function get_sesions_of_pelis($db, $id_peli)
     }
     echo "</div>";
 }
+
+function get_info_sesions_of_pelis($db, $sesion_pelicula)
+{
+    $db->exec('use peliculas;');
+    $info_pelicula_sesion = $db->query("SELECT * FROM sesiones INNER JOIN peliculas ON sesiones.peliculas_id_peli = peliculas.id_peli where sesiones.id_sesion = '" . $sesion_pelicula . "'");
+    $fila = $info_pelicula_sesion->fetch(PDO::FETCH_ASSOC);
+    return $fila;
+}
+
+function pintar_asientos($db, $id_sesion)
+{
+    $db->exec('use peliculas;');
+    $a_ocupados = $db->query("SELECT * FROM asientos where sesion_asiento = " . $id_sesion . "");
+    $asientos_ocupados = $a_ocupados->fetch(PDO::FETCH_ASSOC);
+    $sesion_sala = $db->query("SELECT * FROM sesiones INNER JOIN salas on sesiones.sala_sesion = salas.id_sala where sesiones.id_sesion = " . $id_sesion);
+    // $sesion_sala = $sesion_sala->fetch(PDO::FETCH_ASSOC);
+    $n_fila = 0;
+    $n_asientos = 0;
+    foreach ($sesion_sala as $fila) {
+        $n_fila = $fila['fila'];
+        $n_asientos = $fila['asientos_fila'];
+    }
+    print "nº asientos: " . $n_asientos . "<br>";
+    print "nº filas: " . $n_fila . "<br>";
+    echo "<div class=' d-flex justify-content-center'>";
+    echo "<table>";
+    for ($i = 1; $i <= $n_fila; $i++) {
+        echo "<tr>";
+        echo "<td class=''>F-" . $i . "</td>";
+        for ($j = 1; $j <= $n_asientos; $j++) {
+            echo "<td id_fila='" . $i  . "' id_asientos='" . $j. "'><img src='../images/butacaVacia.gif'></td>";
+        }
+        echo "</tr>";
+    }
+    echo "</table>";
+    echo "</div>";
+}
