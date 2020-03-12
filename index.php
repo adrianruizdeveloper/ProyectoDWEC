@@ -72,6 +72,6 @@
 
 </body>
 <script src="functions/ajax/function_ajax.js"></script>
-<script src="functions/ajax/dar_horas.js"></script>
+<script src="assets/js/dar_horas.js"></script>
 
 </html>

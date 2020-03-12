@@ -1,4 +1,3 @@
-
 <?php
 include "assets/conectors/conector.php";
 
@@ -21,10 +20,9 @@ try {
                 </div>
                 <div class='col-xs-12 col-md-6 col-lg-8'>
                     <h3 id='pelicula'>" . $pelicula["nombre_peli"] . "</h3>
-
                     <!--<p>Categoria principal: " . $pelicula["descripcion_categoria"] . "</p>-->
                     <!--<p>Edad: " . $pelicula["edad_restriccion"] . " años</p>-->
-                    <select data-id='" . $pelicula["nombre_peli"] . "' id='fecha_".$pelicula["id_peli"] ."' name='fecha'>
+                    <select data-id='" . $pelicula["nombre_peli"] . "' id='fecha' name='fecha'>
                     <option value='Ninguno' selected='true' disabled='enable'>Selecione una fecha</option>";
 
         /* muestra las fechas de sesiones */
@@ -52,4 +50,3 @@ try {
     echo "Error : " . $e->getMessage();
 }
 ?>
-
