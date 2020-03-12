@@ -1,4 +1,3 @@
-$(document).ready(function(){
 $('#enviar_contacto').click(function () {
     var nombre = $('#nombre_contacto').val();
     var correo = $('#correo_contacto').val();
@@ -10,5 +9,4 @@ $('#enviar_contacto').click(function () {
             success: function (data) {
             }
         });
-});
 });
