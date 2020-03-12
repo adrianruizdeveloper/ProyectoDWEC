@@ -29,7 +29,7 @@
 
             ?>
             <div class="col-md-12">
-                <div class="row">
+                <div class="row justify-content-center">
                     <?php
                     include('functions/connectPDO.php');
                     include('functions/querys.php');
