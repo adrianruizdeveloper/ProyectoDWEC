@@ -15,14 +15,14 @@ INSERT INTO `tipos_restricciones` (`id_restriccion`,`descripcion_restriccion`,`e
 INSERT INTO `tipos_restricciones` (`id_restriccion`,`descripcion_restriccion`,`edad_restriccion`) VALUES  (5, 'No recomendada para menores de 18 años','18');
 	
 	#salas
-INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`) VALUES  (1, 'Sala 1', '50', 5, 10);
-INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`) VALUES  (2, 'Sala 2', '50', 5, 10);
-INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`) VALUES  (3, 'Sala 3', '50', 5, 10);
-INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`) VALUES  (4, 'Sala 4', '50', 5, 10);
-INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`) VALUES  (5, 'Sala 5', '250', 10, 25);
-INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`) VALUES  (6, 'Sala 6', '250', 10, 25);
-INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`) VALUES  (7, 'Sala 7', '300', 10, 30);
-INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`) VALUES  (8, 'Sala 8', '300', 10, 30);
+INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`, filas_salas, asientos_filas_salas) VALUES  (1, 'Sala 1', '50', 5, 10);
+INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`, filas_salas, asientos_filas_salas) VALUES  (2, 'Sala 2', '50', 5, 10);
+INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`, filas_salas, asientos_filas_salas) VALUES  (3, 'Sala 3', '50', 5, 10);
+INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`, filas_salas, asientos_filas_salas) VALUES  (4, 'Sala 4', '50', 5, 10);
+INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`, filas_salas, asientos_filas_salas) VALUES  (5, 'Sala 5', '250', 10, 25);
+INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`, filas_salas, asientos_filas_salas) VALUES  (6, 'Sala 6', '250', 10, 25);
+INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`, filas_salas, asientos_filas_salas) VALUES  (7, 'Sala 7', '300', 10, 30);
+INSERT INTO `salas` (`id_sala`,`nombre_sala`, `capacidad_sala`, filas_salas, asientos_filas_salas) VALUES  (8, 'Sala 8', '300', 10, 30);
 
 	#peliculas
 INSERT INTO `peliculas` (`id_peli`,`nombre_peli`, `nombre_director_peli`, `fecha_peli`, `categoria1_peli`, `restriccion_peli`, `caratula`) VALUES  (1, 'Aves de presa', 'Cathy Yan', '2020-07-02', 3, 5, "avesdepresaylafantabulosa.jpg");
