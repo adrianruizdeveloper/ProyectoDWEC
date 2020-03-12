@@ -33,13 +33,16 @@ function cabecera($archivo){
             <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
                 <li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i
                             class="fa fa-cog fa-fw fa-lg"></i></a></li>
-                    <?php 
+                    <?php
                     if(!isset($_SESSION['sess_user_id'])){
                     echo '
                     <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModallogin">Login <span class="caret"></span></button>;
                     <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModalregistro">Register <span class="caret"></span></button>';
                     }else{
-                        echo '<li id="n_usuario">' . $_SESSION['sess_user_name'] . '&nbsp &nbsp <a href="'.$logout.'"> <button type="button" class="btn btn-primary">Logout</button></a></li>';
+                        echo '<li id="n_usuario">' . $_SESSION['sess_user_name'] . '&nbsp &nbsp <a href="'.$logout.'"> <button type="button" class="btn btn-outline-secondary">Logout</button></a></li>&nbsp';
+                    if ($_SESSION['rol']==1){
+                        echo '<li><button class="btn btn-outline-secondary" type="button">Admin</button></li>';
+                    }
                     }?>
                 </li>
             </ul>
