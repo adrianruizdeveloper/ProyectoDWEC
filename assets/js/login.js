@@ -2,7 +2,7 @@ $('#button-login').click(function () {
     var username = $('#username').val();
     var password = $('#password').val();
         $.ajax({
-            url: "assets/gets/getlogin.php",
+            url: "assets/gets/getcontacto.php",
             type: "POST",
             data: {username: username, password: password},
             success: function (data) {
