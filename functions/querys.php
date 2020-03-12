@@ -15,9 +15,9 @@ function get_sesions_of_pelis($db, $id_peli)
         $id_button = $hour . "_sesion";
 
         if ($hour_now <= $hour) {
-            echo "<button id='" . $id_button . "' data_id_pelicula='" . $fila['peliculas_id_peli'] . "' data_id_sesion=' " . $fila['id_sesion'] . "' class=' button-caratula btn btn-secondary btn-lg active ' role='button'aria-pressed='true'>" . $hour . '</button>';
+            echo "<button id='" . $id_button . "' data_id_pelicula='" . $fila['peliculas_id_peli'] . "' data_id_sesion='" . $fila['id_sesion'] . "' class=' button-caratula btn btn-secondary btn-lg active ' role='button'aria-pressed='true'>" . $hour . '</button>';
         } else {
-            echo "<button disabled id='" . $id_button . "' data_id_pelicula='" . $fila['peliculas_id_peli'] . "' data_id_sesion=' " . $fila['id_sesion'] . "' class=' button-caratula btn btn-secondary btn-lg active ' role='button'aria-pressed='true'>" . $hour . '</button>';
+            echo "<button disabled id='" . $id_button . "' data_id_pelicula='" . $fila['peliculas_id_peli'] . "' data_id_sesion='" . $fila['id_sesion'] . "' class=' button-caratula btn btn-secondary btn-lg active ' role='button'aria-pressed='true'>" . $hour . '</button>';
         }
         echo "</div>";
     }
@@ -32,7 +32,7 @@ function get_info_sesions_of_pelis($db, $sesion_pelicula)
     return $fila;
 }
 
-function pintar_asientos($db, $id_sesion)
+function pintar_asientos($db, $id_sesion, $n_asientos_r)
 {
     $db->exec('use peliculas;');
     $a_ocupados = $db->query("SELECT * FROM asientos where sesion_asiento = " . $id_sesion . "");
@@ -42,8 +42,8 @@ function pintar_asientos($db, $id_sesion)
     $n_fila = 0;
     $n_asientos = 0;
     foreach ($sesion_sala as $fila) {
-        $n_fila = $fila['fila'];
-        $n_asientos = $fila['asientos_fila'];
+        $n_fila = $fila['filas_sala'];
+        $n_asientos = $fila['asientos_filas_sala'];
     }
     print "nº asientos: " . $n_asientos . "<br>";
     print "nº filas: " . $n_fila . "<br>";
@@ -53,7 +53,8 @@ function pintar_asientos($db, $id_sesion)
         echo "<tr>";
         echo "<td class=''>F-" . $i . "</td>";
         for ($j = 1; $j <= $n_asientos; $j++) {
-            echo "<td id_fila='" . $i  . "' id_asientos='" . $j. "'><img src='../images/butacaVacia.gif'></td>";
+            //hacer query para generar la tabla según el estado
+            echo "<td ><a id='_asientos' data_id_asientos_r='" . $n_asientos_r . "' data_id_fila='" . $i  . "' data_id_asientos='" . $j. "' ><img src='../images/butacaVacia.gif'></a></td>";
         }
         echo "</tr>";
     }

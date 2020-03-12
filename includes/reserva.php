@@ -56,7 +56,7 @@
                             <article class="card-body p-5">
                                 <!-- pintar asientos -->
                                 <?php
-                                pintar_asientos($db,  $sesion_pelicula);
+                                pintar_asientos($db,  $sesion_pelicula, $n_asientos);
                                 ?>
                                 <hr>
                                 <div class="row">
