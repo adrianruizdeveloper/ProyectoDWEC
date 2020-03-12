@@ -67,6 +67,7 @@
 
     // require "includes/sesiones_semanal.php"; 
     require "includes/pie.php";
+    footer("index");
     ?>
 
 </body>
