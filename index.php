@@ -22,10 +22,10 @@
     ?>
 
 
-    <div class="row text-center">
-        <div class="container body center">
+<div class="container body center text-center">
+        <div class="row">
             <?php
-            echo "<h1 class='text-center'>Sesiones: " . $dia_actual . "</h1>";
+            echo "<h1 class='text-center m-auto'>Sesiones: " . $dia_actual . "</h1>";
 
             ?>
             <div class="col-md-12">

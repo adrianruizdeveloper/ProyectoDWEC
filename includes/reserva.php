@@ -33,8 +33,8 @@
     ?>
 
 
-    <div class="row text-center">
-        <div class="container body center">
+    <div class="container body center">
+        <div class="row text-center">
             <div class="container">
 
 
