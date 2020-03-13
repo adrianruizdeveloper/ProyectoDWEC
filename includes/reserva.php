@@ -16,9 +16,13 @@
 
 <body>
     <?php session_start();
-    // $sesion_pelicula = $_SESSION['sesion_selected'];
+    if (isset($_SESSION['asiento_ocupado'])) {
+        unset($_SESSION['asiento_ocupado']);
+    }
+
+    $sesion_pelicula = $_SESSION['sesion_selected'];
     // $n_asientos = $_SESSION['asientos_ocupados'];
-    $sesion_pelicula = 1;
+    // $sesion_pelicula = 1;
     $n_asientos = 3;
     require "cabecera.php";
     cabecera("index");
@@ -60,16 +64,20 @@
                                 ?>
                                 <hr>
                                 <div class="row">
-                                    <div class="col-sm-5">
+                                    <div class="col-sm-2 p-0">
                                         <dl class="param param-inline">
                                             <dt class="text-left">Cantidad: </dt>
                                             <dd>
-                                                <?php
-                                                echo  "<input disabled class='form-control form-control-sm text-cente' style='width:70px;' value='" . $n_asientos . "'/>"
-                                                ?>
+
+
                                             </dd>
-                                        </dl> <!-- item-property .// -->
-                                    </div> <!-- col.// -->
+                                        </dl>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <?php
+                                        echo  "<input disabled class='form-control form-control-sm text-cente' style='width:70px;' value='" . $n_asientos . "'/>"
+                                        ?>
+                                    </div>
                                     <!-- <div class="col-sm-7">
                                         <dl class="param param-inline">
                                             <dt class="text-left">Idioma: </dt>
@@ -84,7 +92,7 @@
                                     </div>  -->
                                 </div> <!-- row.// -->
                                 <hr>
-                                <a href="#" class="btn btn-lg btn-primary text-uppercase"> comprar </a>
+                                <button id="boton_reserva" class="btn btn-lg btn-primary text-uppercase"> comprar </button>
                                 <!-- <a href="#" class="btn btn-lg btn-outline-primary text-uppercase"> Añadir al carrito </a> -->
                             </article> <!-- card-body.// -->
                         </aside> <!-- col.// -->

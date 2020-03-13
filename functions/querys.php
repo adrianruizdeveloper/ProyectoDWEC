@@ -51,13 +51,26 @@ function pintar_asientos($db, $id_sesion, $n_asientos_r)
     echo "<table>";
     for ($i = 1; $i <= $n_fila; $i++) {
         echo "<tr>";
-        echo "<td class=''>F-" . $i . "</td>";
+        // echo "<td class=''>F-" . $i . "</td>";
         for ($j = 1; $j <= $n_asientos; $j++) {
             //hacer query para generar la tabla según el estado
-            echo "<td ><a id='_asientos' data_id_asientos_r='" . $n_asientos_r . "' data_id_fila='" . $i  . "' data_id_asientos='" . $j. "' ><img src='../images/butacaVacia.gif'></a></td>";
+            // echo "<td ><a id='_asientos' data_id_asientos_r='" . $n_asientos_r . "' data_id_fila='" . $i  . "' data_id_asientos='" . $j. "' ><img src='../images/butacaVacia.gif'></a></td>";
+            estado_asientos($db, $id_sesion, $i, $j, $n_asientos_r);
         }
         echo "</tr>";
     }
     echo "</table>";
     echo "</div>";
+}
+
+function estado_asientos($db, $id_sesion, $fila, $asiento, $n_asientos_r)
+{
+    $estado = $db->query("SELECT count(*) FROM `asientos` WHERE fila_asiento =" . $fila . " and n_asiento = " . $asiento . " and sesion_asiento = " . $id_sesion);
+    $request = $estado->fetch(PDO::FETCH_COLUMN);
+    //1-libre, 2-reservado, 3-ocupado
+    if (!$request) {
+        echo "<td ><a id='_asientos' data_estado='1' data_asientos_limit='" . $n_asientos_r . "' data_id_fila='" . $fila  . "' data_id_asientos='" . $asiento . "' ><img src='../images/butacaVacia.gif'></a></td>";
+    } else {
+        echo "<td ><a id='_asientos' data_estado='3' data_asientos_limit='" . $n_asientos_r . "' data_id_fila='" . $fila  . "' data_id_asientos='" . $asiento . "' ><img src='../images/butacaReservada.gif'></a></td>";
+    }
 }
