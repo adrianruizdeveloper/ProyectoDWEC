@@ -6,7 +6,7 @@ $("[id*=sesion]").on('click', function () {
         data: { sesion: sesion },
         success: function (data) {
             // console.log(data)
-            window.location.replace("includes/reserva.php");
+            window.location.replace("includes/sesiones.php");
         }
     });
 });
@@ -41,5 +41,29 @@ $("[id*=asientos]").click(function () {
             }
             // console.log(data);
         }
+    });
+});
+
+$(document).ready(function () {
+    $("#boton_entradas").click(function () {
+        var entrada = $('input#n_entradas').val();
+
+        $.ajax({
+            url: "../functions/entradas_cantidad.php",
+            type: "POST",
+            data: {
+                entrada: entrada,
+            },
+            success: function (data) {
+                console.log(entrada);
+                if (entrada <= 10 && entrada >0) {
+                    // console.log('entra');
+                    window.location.replace("reserva.php");
+                } else {
+                    // console.log('sale');
+                    alert('La cantidad de entradas no puede ser mas de 10');
+                }
+            }
+        });
     });
 });

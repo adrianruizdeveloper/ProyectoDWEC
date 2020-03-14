@@ -74,3 +74,8 @@ function estado_asientos($db, $id_sesion, $fila, $asiento, $n_asientos_r)
         echo "<td ><a id='_asientos' data_estado='3' data_asientos_limit='" . $n_asientos_r . "' data_id_fila='" . $fila  . "' data_id_asientos='" . $asiento . "' ><img src='../images/butacaReservada.gif'></a></td>";
     }
 }
+
+// function pintar_info_pelicula($db, $id_sesion){
+//     $estado = $db->query("SELECT count(*) FROM `asientos` WHERE fila_asiento =" . $fila . " and n_asiento = " . $asiento . " and sesion_asiento = " . $id_sesion);
+
+// }

@@ -21,11 +21,11 @@
     }
 
     $sesion_pelicula = $_SESSION['sesion_selected'];
-    // $n_asientos = $_SESSION['asientos_ocupados'];
+    $n_asientos = $_SESSION['entradas_cantidad'];
     // $sesion_pelicula = 1;
-    $n_asientos = 3;
+    // $n_asientos = 3;
     require "cabecera.php";
-    cabecera("index");
+    cabecera('includes');
     include('../functions/connectPDO.php');
     include('../functions/querys.php');
     $db = pdo();
