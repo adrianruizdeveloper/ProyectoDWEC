@@ -45,8 +45,8 @@ function pintar_asientos($db, $id_sesion, $n_asientos_r)
         $n_fila = $fila['filas_sala'];
         $n_asientos = $fila['asientos_filas_sala'];
     }
-    print "nº asientos: " . $n_asientos . "<br>";
-    print "nº filas: " . $n_fila . "<br>";
+    // print "nº asientos: " . $n_asientos . "<br>";
+    // print "nº filas: " . $n_fila . "<br>";
     echo "<div class=' d-flex justify-content-center'>";
     echo "<table>";
     for ($i = 1; $i <= $n_fila; $i++) {
@@ -71,7 +71,7 @@ function estado_asientos($db, $id_sesion, $fila, $asiento, $n_asientos_r)
     if (!$request) {
         echo "<td ><a id='_asientos' data_estado='1' data_asientos_limit='" . $n_asientos_r . "' data_id_fila='" . $fila  . "' data_id_asientos='" . $asiento . "' ><img src='../images/butacaVacia.gif'></a></td>";
     } else {
-        echo "<td ><a id='_asientos' data_estado='3' data_asientos_limit='" . $n_asientos_r . "' data_id_fila='" . $fila  . "' data_id_asientos='" . $asiento . "' ><img src='../images/butacaReservada.gif'></a></td>";
+        echo "<td ><a id='_asientos' data_estado='3' data_asientos_limit='" . $n_asientos_r . "' data_id_fila='" . $fila  . "' data_id_asientos='" . $asiento . "' ><img src='../images/butacaOcupada.gif'></a></td>";
     }
 }
 

@@ -57,9 +57,10 @@
                             </article> <!-- gallery-wrap .end// -->
                         </aside>
                         <aside class="col-sm-7">
-                            <article class="card-body p-5">
+                            <article class="card-body pl-5 pr-5 pb-5">
                                 <!-- pintar asientos -->
                                 <?php
+                                echo "<h1>" . $info['nombre_peli'] . "</h1>";
                                 pintar_asientos($db,  $sesion_pelicula, $n_asientos);
                                 ?>
                                 <hr>
@@ -98,8 +99,6 @@
                         </aside> <!-- col.// -->
                     </div> <!-- row.// -->
                 </div> <!-- card.// -->
-
-
             </div>
         </div>
     </div>
