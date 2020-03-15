@@ -55,8 +55,11 @@ $(document).ready(function () {
                 entrada: entrada,
             },
             success: function (data) {
-                console.log(entrada);
-                if (entrada <= 10 && entrada > 0) {
+                // console.log(entrada);
+                if(data == 'error'){
+                    alert('Necesitas estar logueado');
+                    
+                }else if (entrada <= 10 && entrada > 0) {
                     // console.log('entra');
                     window.location.replace("reserva.php");
                 } else {
@@ -85,13 +88,26 @@ $(document).on('click', '#sesion_boton', function () {
 
 $(document).ready(function () {
     $("#boton_reserva").click(function () {
-       
-            $.ajax({
+
+        $.ajax({
             url: "../functions/check_sites.php",
             type: "POST",
             success: function (data) {
-                console.log('entrada');
-                    window.location.replace("compra.php");
+                // console.log('entrada');
+                window.location.replace("compra.php");
+            }
+        });
+    });
+});
+$(document).ready(function () {
+    $("#enviar_entrada").click(function () {
+        // console.log(data);
+        var button = $("#enviar_entrada");
+        $.ajax({
+            url: "../functions/send_tickets.php",
+            type: "POST",
+            success: function (data) {
+                $(button).replaceWith("<h1>Gracias por su compra!!</h1>");
             }
         });
     });

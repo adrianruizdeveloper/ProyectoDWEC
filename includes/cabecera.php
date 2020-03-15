@@ -31,7 +31,7 @@ function cabecera($archivo){
                 <li class="nav-item"><a href="<?php echo $index;?>" class="nav-link">Inicio</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Proyecciones</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Películas</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Ayuda/Contacto</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"  data-toggle="modal" data-target="#myModalcontacto">Ayuda/Contacto</a></li>
             </ul>
             <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
                 <li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i
