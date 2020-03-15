@@ -12,6 +12,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=250, initial-scale=1">
+    <script src="../assets/js/insertar_ticket.js"><script>
 </head>
 
 <body>
@@ -68,7 +69,7 @@
 
                                         for($f=1; $f < sizeof($asientos[$i]); $f++)
                                         {
-                                            echo", asiento: ".$asientos[0][$f]."</p>";
+                                            echo", asiento: ".$asientos[$i][$f]."</p>";
                                             $total_asientos++;
                                         }
                                     }
@@ -80,7 +81,7 @@
                                         Acepto los Términos y condiciones <br>
                                         Política de privacidad de cinesjaen.com
                                     </label>
-                                    <p><input class='enviar_entrada btn btn-primary' type='button' value='Enviar al correo'>
+                                    <p><input id='enviar_entrada' class=' btn btn-primary' type='button' value='Enviar al correo' onclick='insert();'>
                                     </p>
                                 </div>
                             </div>
