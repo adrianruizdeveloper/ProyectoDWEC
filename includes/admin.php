@@ -14,7 +14,8 @@ session_start();
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/eliminar.js"></script>
+    <script src="../assets/js/eliminar_pelis.js"></script>
+    <script src="../assets/js/eliminar_sala.js"></script>
     <script src="../assets/js/popper.min.js"></script>
     <link rel="stylesheet" type="text/css"
         href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.20/af-2.3.4/b-1.6.1/b-colvis-1.6.1/b-flash-1.6.1/b-html5-1.6.1/b-print-1.6.1/cr-1.5.2/fc-3.3.0/fh-3.1.6/kt-2.5.1/r-2.2.3/rg-1.1.1/rr-1.2.6/sc-2.0.1/sp-1.0.1/sl-1.3.1/datatables.min.css" />
@@ -38,6 +39,17 @@ session_start();
                 $fecha = $fila['fecha_peli'];
                 $restriccion = $fila['edad_restriccion'];
                 $lista .= '<tr id='.$id.'><th scope="row">'.$id.'</th><td>'.$nombre.'</td><td>'.$fecha.'</td><td>+'.$restriccion.'</td><td><button class="btn btn-info">Editar</button>&nbsp<button onclick="eliminar('.$id.')" class="btn btn-danger">Eliminar</button></td></tr>';
+        }        
+        
+        $lista_sala = "";
+        $consulta_sala = "select id_sala, nombre_sala, capacidad_sala, filas_sala, asientos_filas_sala from salas";
+        foreach ($db2->query($consulta_sala) as $fila) {
+                $id = $fila['id_sala'];
+                $nombre = $fila['nombre_sala'];
+                $capacidad = $fila['capacidad_sala'];
+                $filas = $fila['filas_sala'];
+                $asientos = $fila['asientos_filas_sala'];
+                $lista_sala .= '<tr id='.$id.'><th scope="row">'.$id.'</th><td>'.$nombre.'</td><td>'.$capacidad.'</td><td>'.$filas.'</td><td>'.$asientos.'</td><td><button class="btn btn-info">Editar</button>&nbsp<button onclick="eliminar_sala('.$id.')" class="btn btn-danger">Eliminar</button></td></tr>';
         }
 
     ?>
@@ -67,10 +79,31 @@ session_start();
             </tbody>
 
         </table>
+    </div>    
+    <br>
+    <div class="container">
+        <br>
+        <p class="text-center">SALAS <button style="float: right;" data-toggle="modal" data-target="#myModalsala" class="btn btn-info">Añadir +</button></p>
+        
+        <table class="table" id="lista_salas">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Capacidad</th>
+                    <th scope="col">Filas</th>
+                    <th scope="col">Asientos/fila</th>
+                </tr>
+            </thead>
+            <tbody id="salas" class="text-center">
+                <?php echo $lista_sala; ?>
+            </tbody>
 
-
+        </table>
     </div>
 </body>
+
+
 
 <div class="modal" id="myModalpeli">
     <div class="modal-dialog modal-lg">
@@ -84,6 +117,22 @@ session_start();
             <!-- Modal body -->
             <div class="modal-body">
                 <?php include "anadir_peli.php" ?>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="myModalsala">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Login</h4>
+                <button type="button" class="close" data-dismiss="modal"><span style="color: red;">X</span></i>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <?php include "anadir_sala.php" ?>
             </div>
         </div>
     </div>
