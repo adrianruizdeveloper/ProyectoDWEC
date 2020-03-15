@@ -82,3 +82,18 @@ $(document).on('click', '#sesion_boton', function () {
     });
 });
 // });
+
+$(document).ready(function () {
+    $("#boton_reserva").click(function () {
+       
+            $.ajax({
+            url: "../functions/check_sites.php",
+            type: "POST",
+            success: function (data) {
+                console.log('entrada');
+                    window.location.replace("compra.php");
+            }
+        });
+    });
+});
+
