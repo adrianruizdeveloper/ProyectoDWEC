@@ -1,4 +1,5 @@
 <?php
+session_start();
 function cabecera($archivo){
     if ($archivo == "index"){
 
@@ -8,6 +9,7 @@ function cabecera($archivo){
         $loginjs = "assets/js/login.js";
         $registrojs = "assets/js/registro.js";
         $login = "includes/login.php";
+        $admin = "includes/admin.php";
     }else{
         $registro = "registro_modal.php";
         $index = "../index.php";
@@ -15,6 +17,7 @@ function cabecera($archivo){
         $loginjs = "../assets/js/login.js";
         $registrojs = "../assets/js/registro.js";
         $login = "login.php";
+        $admin = "admin.php";
     }?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
     <div class="container">
@@ -41,7 +44,7 @@ function cabecera($archivo){
                     }else{
                         echo '<li id="n_usuario">' . $_SESSION['sess_user_name'] . '&nbsp &nbsp <a href="'.$logout.'"> <button type="button" class="btn btn-outline-secondary">Logout</button></a></li>&nbsp';
                     if ($_SESSION['rol']==1){
-                        echo '<li><button class="btn btn-outline-secondary" type="button">Admin</button></li>';
+                        echo '<li><a href="'.$admin.'"><button class="btn btn-outline-secondary" type="button">Admin</button></a></li>';
                     }
                     }?>
                 </li>
