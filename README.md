@@ -7,14 +7,14 @@ LOAD XML LOCAL INFILE 'table1.xml'
     INTO TABLE table1
     ROWS IDENTIFIED BY '<table1>';
 ### Iván Ojeda Roig
-#### Listado de sesiones
+#### Listado de sesiones, panel de información y venta de ticket
 ### Ernesto Castillo Martínez
-#### index, cabecera, pie
+#### index, cabecera, pie, Panel de selección de asientos
 ### Francisco Javier Muñoz Montoro
-#### Información de sesiones
+#### Información de sesiones, documentación
 ### Adrián Ruiz Martínez
 ##### login, registro, contacto, base de datos, panel de administrador
     
 ### queda
 
-Panel de selección de asientos, panel de información y venta de ticket, enviar por correo el ticket
+enviar por correo el ticket
