@@ -4,9 +4,6 @@ $sesion_selected = $_SESSION['sesion_selected'];
 if (isset($_SESSION['asientos_ocupados'])) {
     unset($_SESSION['asientos_ocupados']);
 }
-// var_dump($sesion_selected);
-echo $sesion_selected;
-
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +25,6 @@ echo $sesion_selected;
 <body>
     <?php
     $sesion_pelicula = $_SESSION['sesion_selected'];
-
     $n_asientos = 3;
     require "cabecera.php";
     cabecera('includes');
@@ -51,7 +47,7 @@ echo $sesion_selected;
                                 <div class="img-big-wrap">
                                     <div class="center">
                                         <?php
-                                        echo "<a href='#'><img src=../images/" . $info['caratula'] . " class='productos prod_LPS'></a>";
+                                        echo "<a href='#'><img src=../images/" . $info['caratula'] . " class='caratula_sesion'></a>";
 
                                         ?>
 
@@ -84,23 +80,14 @@ echo $sesion_selected;
                                             </dd>
                                         </dl>
                                     </div>
-                                    <div class="col-md-5">
+                                    <div class="col-md-4">
                                         <?php
                                         echo  "<input id='n_entradas' type='number' class='form-control form-control-sm text-cente' style='width:70px;' min='1' max='10' value='1'/>"
                                         ?>
                                     </div>
-                                    <!-- <div class="col-sm-7">
-                                        <dl class="param param-inline">
-                                            <dt class="text-left">Idioma: </dt>
-                                            <dd>
-                                                <select class="form-control form-control-sm" style="width:100px;">
-                                                    <option> Español </option>
-                                                    <option> Ingles </option>
-                                                    <option> Frances </option>
-                                                </select>
-                                            </dd>
-                                        </dl>
-                                    </div>  -->
+                                    <div class="col-sm-4">
+                                        <p><b>Precio:</b> 7.00€</p>
+                                    </div> 
                                 </div> <!-- row.// -->
                                 <hr>
                                 <button id="boton_entradas" class="btn btn-lg btn-primary text-uppercase"> continuar </button>

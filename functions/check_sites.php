@@ -48,6 +48,7 @@ if (!isset($_SESSION['asiento_ocupado'])) {
 
             echo 'no_limit';
         }
+        
     } else {
 
         unset($_SESSION['asiento_ocupado'][$index_delete]);

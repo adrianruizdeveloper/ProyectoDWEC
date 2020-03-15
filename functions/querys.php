@@ -10,8 +10,8 @@ function get_sesions_of_pelis($db, $id_peli)
         echo "<div class='col-xs-3 col-md-2 col-lg-2 button_div_sesion'>";
 
         $hour_format = $date = strtotime($fila['hora_sesion']);
-        $hour = date(' H:i', $hour_format);
-        $hour_now = date(' H:i');
+        $hour = date('H:i', $hour_format);
+        $hour_now = date('H:i');
         $id_button = $hour . "_sesion";
 
         if ($hour_now <= $hour) {

@@ -56,7 +56,7 @@ $(document).ready(function () {
             },
             success: function (data) {
                 console.log(entrada);
-                if (entrada <= 10 && entrada >0) {
+                if (entrada <= 10 && entrada > 0) {
                     // console.log('entra');
                     window.location.replace("reserva.php");
                 } else {
@@ -67,3 +67,18 @@ $(document).ready(function () {
         });
     });
 });
+
+// $(document).ready(function () {
+$(document).on('click', '#sesion_boton', function () {
+    var sesion = $(this).attr('data_id_sesion');
+    $.ajax({
+        url: "functions/sesion_id_peli.php",
+        type: "POST",
+        data: { sesion: sesion },
+        success: function (data) {
+            // console.log(data)
+            window.location.replace("includes/sesiones.php");
+        }
+    });
+});
+// });

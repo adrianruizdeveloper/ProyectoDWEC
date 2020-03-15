@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=250, initial-scale=1">
 </head>
 
-<body>
+<body>  
     <?php session_start();
     if (isset($_SESSION['asiento_ocupado'])) {
         unset($_SESSION['asiento_ocupado']);
@@ -45,7 +45,7 @@
                                 <div class="img-big-wrap">
                                     <div class="center">
                                         <?php
-                                        echo "<a href='#'><img src=../images/" . $info['caratula'] . " class='productos prod_LPS'></a>";
+                                        echo "<a href='#'><img src=../images/" . $info['caratula'] . " class='caratula_sesion'></a>";
 
                                         ?>
 
